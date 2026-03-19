@@ -9,7 +9,9 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 | **US03** | Usuário Leigo | Navegar por categorias de produtos (ex: Mouses) | Entender como filtros facilitam a experiência do usuário (UX). |
 | **US04** | Estudante | Ativar legendas nos vídeos didáticos | Garantir a compreensão do conteúdo em qualquer ambiente (Acessibilidade). |
 
+<br><br>
 ---
+<br><br>
 
 # Requisitos Funcionais (RF)
 
@@ -21,7 +23,9 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 | **RF04** | Detalhes do Produto: Ao clicar em um item, deve ser exibido um "modal" ou página com especificações técnicas detalhadas. | 
 | **RF05** | Área de Conteúdo de Recursos Educacionais Abertos (REA): A página deve possuir uma seção dedicada aos vídeos explicativos do projeto de extensão. |
 
+<br><br>
 ---
+<br><br>
 
 # Requisitos Não Funcionais (RNF)
 
