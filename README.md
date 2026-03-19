@@ -70,7 +70,7 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 *   **Sprint 1 (Março):** Planejamento, estruturação do GitHub e definição de requisitos.
 *   **Sprint 2-4 (Abril):** Desenvolvimento do código-fonte e prototipação.
 *   **Sprint 5-7 (Maio):** Gravação, edição de vídeos e documentação final.
-*   **🚀 Entrega Final:** 02/06/2026
+*   **Entrega Final:** 02/06/2026
 
 ## Planejamento e Divisão de horas das Tarefas (distribuição de Carga Horária).
 
