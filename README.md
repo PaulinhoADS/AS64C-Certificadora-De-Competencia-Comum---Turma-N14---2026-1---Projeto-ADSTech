@@ -95,10 +95,10 @@ Sugestão de cronograma baseada na carga horária de **120 horas totais**:
 
 - [Pasta de Documentação](./Documentacao)
 - [Requisitos ou Histórias de Usuário](./Documentacao/Historias_Usuario.md)
-- 
+  
 - [Pasta de Planejamentos](./Planejamento)
-- 
+  
 - [Pasta de Protótipos](./Prototipo)
 - [Logomarca sugestão e-commerce](./Prototipo/logo_ADSTech.png)
-- 
+  
 - [Pasta de Recursos Educacionais Abertos (REA)](./REA-Conteudo)
