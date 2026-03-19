@@ -43,11 +43,11 @@ Este repositório contém o planejamento para o desenvolvimento de Recursos Educ
 ## Propostas e Objetivos
 * Desenvolvimento Web Front-End (Interface de E-commerce), apresentando os conceitos fundamentais de HTML, CSS e JavaScript de forma lúdica.
 * Capacitar pessoas leigas a entender a estrutura de uma página da web (e-commerce), utilizando Vídeo-aulas curtas e repositório de código fonte.
-* Demonstrar a aplicação de práticas ágeis no desenvolvimento de um projeto de REA, fazendo uso de Scrum e Kanban (Sprints, Issues).
+* Demonstrar a aplicação de práticas ágeis no desenvolvimento de um projeto de REA. Utilizaremos Scrum para gestão de sprints e Kanban para o fluxo de tarefas. O versionamento de código será feito no GitHub, seguindo padrões de commits técnicos
 
 ## Materiais Didáticos e Vídeos (Planejamento)
 
-Conforme os requisitos da disciplina, o REA será composto por vídeos de curta duração (5 a 7 minutos) e um repositório de código-fonte. Abaixo, detalhamos o planejamento dos vídeos:
+Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
 | Título do Vídeo | Descrição das Principais Ideias | Público-Alvo |
 | :--- | :--- | :--- |
@@ -61,9 +61,16 @@ Conforme os requisitos da disciplina, o REA será composto por vídeos de curta 
 | :--- | :--- | :--- | :--- |
 | **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
 | **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Carlos Andrade, Victor Neves |
-| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | [30/04/2026] | Paulo Cesar, Higor Claro |
-| **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | [01/05/2026] | [15/05/2026] | Todos os menbros |
+| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Claro |
+| **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Todos os menbros |
 | **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Todos os membros |
+
+## Cronograma Resumido
+
+*   **Sprint 1 (Março):** Planejamento, estruturação do GitHub e definição de requisitos.
+*   **Sprint 2-4 (Abril):** Desenvolvimento do código-fonte e prototipação.
+*   **Sprint 5-7 (Maio):** Gravação, edição de vídeos e documentação final.
+*   **🚀 Entrega Final:** 02/06/2026
 
 ## Planejamento e Divisão de horas das Tarefas (distribuição de Carga Horária).
 
