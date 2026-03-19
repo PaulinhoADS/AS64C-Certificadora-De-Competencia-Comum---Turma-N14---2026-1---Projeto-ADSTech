@@ -92,6 +92,6 @@ Sugestão de cronograma baseada na carga horária de **120 horas totais**:
 ---
 
 ## Links para Documentos
-- [Requisitos de Usuário](./Documentacao/Requisitos_Usuario)
+- [Requisitos ou Histórias de Usuário](./Documentacao/Historias_Usuario.md)
 - [Protótipos](./Prototipo)
 - [Planejamento em PDF](./Planejamento/Planejamento_ADSTech.pdf)
