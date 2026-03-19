@@ -8,6 +8,7 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 | **Vídeo 2: Estilizando sua Loja Online** | Introdução ao CSS básico: Como adicionar cores, fontes e organizar elementos na página. | Iniciantes que já viram o primeiro vídeo. |
 | **Vídeo 3: Do Protótipo ao Código - Agilidade** | Como transformamos o design da loja (protótipo) em código real, usando técnicas ágeis. | Pessoas interessadas em processos de desenvolvimento. |
 
+<br><br>
 ## Cronograma de Execução (Proposta)
 
 | Atividade | Data de Início | Data de Término | Responsáveis |
@@ -18,6 +19,7 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 | **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Todos os menbros |
 | **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Todos os membros |
 
+<br><br>
 ## Cronograma Resumido
 
 *   **Sprint 1 (Março):** Planejamento, estruturação do GitHub e definição de requisitos.
@@ -25,6 +27,7 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 *   **Sprint 5-7 (Maio):** Gravação, edição de vídeos e documentação final.
 *   **Entrega Final:** 02/06/2026
 
+<br><br>
 ## Planejamento e Divisão de horas das Tarefas (distribuição de Carga Horária).
 
 Sugestão de cronograma baseada na carga horária de **120 horas totais**:
