@@ -6,7 +6,7 @@ Projeto da Disciplina Certificadora de Competência Comum em formato extensionis
 # Projeto de Recurso Educacional Aberto - ADSTech E-commerce
 
 <div align="center">
-  <img src="logo_ADSTech.png" alt="Logo ADSTech Hub" width="400"/>
+  <img src="logo_ADSTech.png" alt="Logo ADSTech Hub" width="500"/>
 </div>
 
 ---
