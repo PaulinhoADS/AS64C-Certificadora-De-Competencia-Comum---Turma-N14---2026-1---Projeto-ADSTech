@@ -6,7 +6,7 @@ Projeto da Disciplina Certificadora de Competência Comum em formato extensionis
 # ADSTech - Recurso Educacional Aberto (REA)
 
 <div align="center">
-  <img src="URL_PARA_A_LOGO_DO_SITE" alt="Logo ADSTech Hub" width="200"/>
+  <img src="logo_ADSTech" alt="Logo ADSTech Hub" width="200"/>
 </div>
 
 ---
@@ -29,7 +29,7 @@ Este projeto está sendo desenvolvido para a disciplina Certificadora de Compet�
 
 ## Tecnologias Previstas
 - Linguagens: HTML5, CSS3, JavaScript.
-- Ferramentas: VS Code, Git/GitHub, Trello (Kanban).
+- Ferramentas: VS Code, Git/GitHub
 
 ## Tema Principal - Descrição do Projeto
 O projeto **ADSTech** consiste em um Recurso Educacional Aberto voltado para o ensino lúdico de **Desenvolvimento Web Front-End**, integrando técnicas de **Desenvolvimento Ágil**. Utilizaremos como base a criação de um e-commerce de tecnologia para demonstrar conceitos básicos de HTML (estrutura), CSS (estilo) e JavaScript (comportamento)
@@ -59,9 +59,9 @@ Conforme os requisitos da disciplina, o REA será composto por vídeos de curta 
 
 | Atividade | Data de Início | Data de Término | Responsáveis |
 | :--- | :--- | :--- | :--- |
-| **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Leite, Higor Silva, Carlos Andrade, Victor Neves |
+| **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
 | **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Carlos Andrade, Victor Neves |
-| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | [30/04/2026] | Paulo Leite, Higor Claro |
+| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | [30/04/2026] | Paulo Cesar, Higor Claro |
 | **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | [01/05/2026] | [15/05/2026] | Todos os menbros |
 | **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Todos os membros |
 
