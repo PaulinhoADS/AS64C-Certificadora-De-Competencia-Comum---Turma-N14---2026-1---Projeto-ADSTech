@@ -93,13 +93,13 @@ Sugestão de cronograma baseada na carga horária de **120 horas totais**:
 
 ## Links para Documentos
 
-- [Documentação](./Documentacao.md)
+- [Documentação](./Documentacao/Documentacao.md)
 <br><br>
-- [Planejamentos](./Planejamento.md)
+- [Planejamentos](./Planejamento/Planejamento.md)
 <br><br>
-- [Protótipos](./Prototipo.md)
+- [Protótipos](./Prototipo)
 <br><br>
-- [Conteúdo de Recursos Educacionais Abertos (REA)](./REA-Conteudo.md)
+- [Conteúdo de Recursos Educacionais Abertos (REA)](./REA-Conteudo)
 <br><br>
 
 ---
