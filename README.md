@@ -6,7 +6,7 @@ Projeto da Disciplina Certificadora de Competência Comum em formato extensionis
 # ADSTech - Recurso Educacional Aberto (REA)
 
 <div align="center">
-  <img src="logo_ADSTech.png" alt="Logo ADSTech Hub" width="200"/>
+  <img src="logo_ADSTech.png" alt="Logo ADSTech Hub" width="400"/>
 </div>
 
 ---
