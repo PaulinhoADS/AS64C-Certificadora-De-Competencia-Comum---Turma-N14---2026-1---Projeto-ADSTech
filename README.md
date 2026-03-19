@@ -36,6 +36,8 @@ O projeto **ADSTech** consiste em um Recurso Educacional Aberto voltado para o e
 
 ---
 
+> Observação: Este planejamento inicial está sujeito a alterações conforme o feedback do professor.
+
 ## Planejamento 
 
 Este repositório contém o planejamento para o desenvolvimento de Recursos Educacionais Abertos (REA). O objetivo é criar materiais didáticos sobre o desenvolvimento de uma página de e-commerce que serão disponibilizados publicamente como parte do projeto de extensão Ensino Lúdico de Lógica e Programação (ELLP).
@@ -87,7 +89,7 @@ Sugestão de cronograma baseada na carga horária de **120 horas totais**:
 
 ---
 
-> Este planejamento inicial está sujeito a alterações conforme o feedback do professor.
+> Observação: Este planejamento inicial está sujeito a alterações conforme o feedback do professor.
 
 ---
 
