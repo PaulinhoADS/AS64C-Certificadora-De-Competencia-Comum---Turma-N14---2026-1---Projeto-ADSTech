@@ -1,5 +1,5 @@
 # AS64C-Certificadora-De-Competencia-Comum---Turma-N14---2026-1---Projeto-ADSTech
-Projeto da Disciplina Certificadora de Competência Comum em formato extensionista de Recursos Educacionais Abertos (REA) para o curso de ADS - Foco principal em Front-End. Projeto a ser desenvolvido neste repositório utilizando técninas e ferramentas de Desenvolvimento Ágil.
+Projeto da Disciplina Certificadora de Competência Comum em formato extensionista de Recursos Educacionais Abertos (REA) para o curso de ADS - Foco principal em Front-End. Projeto a ser desenvolvido neste repositório utilizando técnicas e ferramentas de Desenvolvimento Ágil.
 
 ---
 
@@ -44,12 +44,12 @@ Este repositório contém o planejamento para o desenvolvimento de Recursos Educ
 
 ## Propostas e Objetivos
 * Desenvolvimento Web Front-End (Interface de E-commerce), apresentando os conceitos fundamentais de HTML, CSS e JavaScript de forma lúdica.
-* Capacitar pessoas leigas a entender a estrutura de uma página da web (e-commerce), utilizando Vídeo-aulas curtas e repositório de código fonte.
+* Capacitar pessoas leigas a entender a estrutura de uma página da web (e-commerce), utilizando videoaulas curtas e repositório de código fonte.
 * Demonstrar a aplicação de práticas ágeis no desenvolvimento de um projeto de REA. Utilizaremos Scrum para gestão de sprints e Kanban para o fluxo de tarefas. O versionamento de código será feito no GitHub, seguindo padrões de commits técnicos
 
 ## Materiais Didáticos e Vídeos (Planejamento)
 
-Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
+Conforme os requisitos da disciplina, o REA será composto por videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
 | Título do Vídeo | Descrição das Principais Ideias | Público-Alvo |
 | :--- | :--- | :--- |
@@ -64,7 +64,7 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 | **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
 | **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Carlos Andrade, Victor Neves |
 | **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Claro |
-| **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Todos os menbros |
+| **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Todos os membros |
 | **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Todos os membros |
 
 ## Cronograma Resumido
@@ -82,7 +82,7 @@ Sugestão de cronograma baseada na carga horária de **120 horas totais**:
 | :--- | :---: |
 | Reuniões de Sprint / Scrum | 20h |
 | Estudo de Tecnologias (HTML/CSS/JS) | 30h |
-| Gravação e Edição das Vídeo-Aulas | 20h |
+| Gravação e Edição das Videoaulas | 20h |
 | Desenvolvimento da Interface E-commerce | 30h |
 | Documentação e README | 20h |
 | **Total** | **120h** |
