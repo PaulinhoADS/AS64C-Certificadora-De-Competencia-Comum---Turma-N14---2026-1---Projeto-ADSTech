@@ -49,13 +49,13 @@ Este repositório contém o planejamento para o desenvolvimento de Recursos Educ
 
 ## Materiais Didáticos e Vídeos (Planejamento)
 
-Conforme os requisitos da disciplina, o REA será composto por videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
+Conforme os requisitos da disciplina, o REA será organizado em módulos temáticos. Cada módulo contará com videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado (HTML, CSS e JavaScript) e uma página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
-| Título do Vídeo | Descrição das Principais Ideias | Público-Alvo |
+| Módulo | Descrição das Principais Ideias | Público-Alvo |
 | :--- | :--- | :--- |
-| **Vídeo 1: Introdução ao Mundo da Web** | Introdução à estrutura básica de uma página HTML para um e-commerce. Como "fazer" o navegador ler o seu código. | Iniciantes sem conhecimento prévio. |
-| **Vídeo 2: Estilizando sua Loja Online** | Introdução ao CSS básico: Como adicionar cores, fontes e organizar elementos na página. | Iniciantes que já viram o primeiro vídeo. |
-| **Vídeo 3: Do Protótipo ao Código - Agilidade** | Como transformamos o design da loja (protótipo) em código real, usando técnicas ágeis. | Pessoas interessadas em processos de desenvolvimento. |
+| **Módulo 1: Introdução ao Mundo da Web** | Introdução à estrutura básica de uma página HTML para um e-commerce. Como "fazer" o navegador ler o seu código. | Iniciantes sem conhecimento prévio. |
+| **Módulo 2: Estilizando sua Loja Online** | Introdução ao CSS básico: Como adicionar cores, fontes e organizar elementos na página. | Iniciantes que já concluíram o Módulo 1. |
+| **Módulo 3: Interatividade com JavaScript** | Introdução à lógica de programação para a Web: manipulação do DOM, eventos de clique e dinamismo na interface. | Alunos que buscam tornar o projeto funcional. |
 
 ## Cronograma de Execução (Proposta)
 
