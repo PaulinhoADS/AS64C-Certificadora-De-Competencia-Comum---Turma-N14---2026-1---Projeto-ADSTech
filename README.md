@@ -17,7 +17,7 @@ Este projeto est√° sendo desenvolvido para a disciplina Certificadora de Compet√
 
 * **Paulo Cesar Leite** - [Perfil GitHub](https://github.com/PaulinhoADS)
 * **Higor Claro da Silva** - [Perfil GitHub](https://github.com/Higorclr)
-* **Carlos Henrique de Andrade** - [Perfil GitHub](https://github.com/ZunKuun)
+* **Carlos Henrique Andrade** - [Perfil GitHub](https://github.com/ZunKuun)
 * **Victor Hugo Concolato Neves** - [Perfil GitHub](https://github.com/victorCNeves)
 
 ---
