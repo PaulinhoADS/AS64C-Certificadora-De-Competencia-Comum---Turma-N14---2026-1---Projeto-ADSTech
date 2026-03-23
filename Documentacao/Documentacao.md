@@ -4,10 +4,12 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 
 | ID | Persona | Necessidade (O que quero) | Finalidade (Para que) |
 | :--- | :--- | :--- | :--- |
-| **US01** | Estudante Iniciante | Acessar a vídeo-aula sobre estrutura HTML | Aprender a montar a base da minha própria loja online. |
-| **US02** | Aluno de ADS | Visualizar o código-fonte do e-commerce no GitHub | Comparar com o vídeo e praticar a implementação técnica. |
-| **US03** | Usuário Leigo | Navegar por categorias de produtos (ex: Mouses) | Entender como filtros facilitam a experiência do usuário (UX). |
-| **US04** | Estudante | Ativar legendas nos vídeos didáticos | Garantir a compreensão do conteúdo em qualquer ambiente (Acessibilidade). |
+| **US01** | Estudante Iniciante | Acessar o módulo (vídeo-aula) sobre estrutura HTML | Aprender a montar a base da minha própria loja online. |
+| **US02** | Estudante | Ativar legendas nos vídeos didáticos | Garantir a compreensão do conteúdo em qualquer ambiente (Acessibilidade). |
+| **US03** | Estudante | Acessar o módulo de JavaScript básico | Aprender a criar interatividade simples em páginas web. |
+| **US04** | Aluno de ADS | Visualizar o código-fonte do e-commerce no GitHub | Comparar com o vídeo e praticar a implementação técnica. |
+| **US05** | Usuário Leigo | Navegar por categorias de produtos (ex: Mouses) | Entender como filtros facilitam a experiência do usuário (UX). |
+| **US06** | Usuário | Clicar no botão "Comprar" e ver uma confirmação | Entender como o JavaScript processa ações do usuário na loja. |
 
 <br><br>
 ---
@@ -21,7 +23,8 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 | **RF02** | Filtro por Categorias: O usuário deve conseguir filtrar os produtos por tipo (ex: Periféricos, Hardware) para facilitar a navegação. |
 | **RF03** | Carrinho de Compras: O sistema deve permitir que o usuário adicione produtos a um carrinho virtual e visualize o total da compra. |
 | **RF04** | Detalhes do Produto: Ao clicar em um item, deve ser exibido um "modal" ou página com especificações técnicas detalhadas. | 
-| **RF05** | Área de Conteúdo de Recursos Educacionais Abertos (REA): A página deve possuir uma seção dedicada aos vídeos explicativos do projeto de extensão. |
+| **RF05** | Área de Conteúdo de Recursos Educacionais Abertos (REA): O sistema deve possuir uma seção para módulos de ensino do projeto de extensão. |
+| **RF04** | Comportamento: O sistema deve demonstrar interatividade básica via JavaScript (ex: alerta de item adicionado ao carrinho). |
 
 <br><br>
 ---
