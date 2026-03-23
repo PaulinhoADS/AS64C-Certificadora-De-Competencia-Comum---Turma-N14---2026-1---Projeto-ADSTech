@@ -24,7 +24,7 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 | **RF03** | Carrinho de Compras: O sistema deve permitir que o usuário adicione produtos a um carrinho virtual e visualize o total da compra. |
 | **RF04** | Detalhes do Produto: Ao clicar em um item, deve ser exibido um "modal" ou página com especificações técnicas detalhadas. | 
 | **RF05** | Área de Conteúdo de Recursos Educacionais Abertos (REA): O sistema deve possuir uma seção para módulos de ensino do projeto de extensão. |
-| **RF04** | Comportamento: O sistema deve demonstrar interatividade básica via JavaScript (ex: alerta de item adicionado ao carrinho). |
+| **RF06** | Comportamento: O sistema deve demonstrar interatividade básica via JavaScript (ex: alerta de item adicionado ao carrinho). |
 
 <br><br>
 ---
