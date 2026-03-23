@@ -47,7 +47,7 @@ Este repositório contém o planejamento para o desenvolvimento de Recursos Educ
 * Capacitar pessoas leigas a entender a estrutura de uma página da web (e-commerce), utilizando videoaulas curtas e repositório de código fonte.
 * Demonstrar a aplicação de práticas ágeis no desenvolvimento de um projeto de REA. Utilizaremos Scrum para gestão de sprints e Kanban para o fluxo de tarefas. O versionamento de código será feito no GitHub, seguindo padrões de commits técnicos
 
-## Materiais Didáticos e Vídeos (Planejamento)
+## Materiais Didáticos e estrutura dos Módulos (Vídeo-Aulas) - (Planejamento)
 
 Conforme os requisitos da disciplina, o REA será organizado em módulos temáticos. Cada módulo contará com videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado (HTML, CSS e JavaScript) e uma página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
@@ -55,7 +55,7 @@ Conforme os requisitos da disciplina, o REA será organizado em módulos temáti
 | :--- | :--- | :--- |
 | **Módulo 1: Introdução ao Mundo da Web** | Introdução à estrutura básica de uma página HTML para um e-commerce. Como "fazer" o navegador ler o seu código. | Iniciantes sem conhecimento prévio. |
 | **Módulo 2: Estilizando sua Loja Online** | Introdução ao CSS básico: Como adicionar cores, fontes e organizar elementos na página. | Iniciantes que já concluíram o Módulo 1. |
-| **Módulo 3: Interatividade com JavaScript** | Introdução à lógica de programação para a Web: manipulação do DOM, eventos de clique e dinamismo na interface. | Alunos que buscam tornar o projeto funcional. |
+| **Módulo 3: Interatividade com JavaScript** | Interatividade com JavaScript - Criando ações e respostas no navegador. | Introdução à lógica de programação para a Web: manipulação do DOM, eventos de clique e dinamismo na interface. | Alunos que buscam tornar o projeto funcional. |
 
 ## Cronograma de Execução (Proposta)
 
