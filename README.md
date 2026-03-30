@@ -62,8 +62,8 @@ Conforme os requisitos da disciplina, o REA será organizado em módulos temáti
 | Atividade | Data de Início | Data de Término | Responsáveis |
 | :--- | :--- | :--- | :--- |
 | **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
-| **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Carlos Andrade, Victor Neves |
-| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Claro |
+| **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Claro, Carlos Andrade, Victor Neves |
+| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Claro, Carlos Andrade, Vitor Neves |
 | **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Todos os membros |
 | **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Todos os membros |
 
@@ -97,9 +97,9 @@ Carga horária total prevista para cada integrante: **120 horas**.
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | Reuniões de Sprint e Scrum | 20 | X | X | X | X |
 | Estudo de Tecnologias (HTML/CSS/JS) | 25 | X | X | X | X |
-| Elaboração de Roteiros (REA) | 15 | | | X | X |
-| Desenvolvimento do E-commerce (Base) | 30 | X | X | | |
-| Gravação e Edição de Vídeos | 15 | | | X | X |
+| Elaboração de Roteiros (REA) | 15 |X | X | X | X |
+| Desenvolvimento do E-commerce (Base) | 30 | X | X | X | X |
+| Gravação e Edição de Vídeos | 15 | X | X | X | X |
 | Documentação e GitHub Pages | 15 | X | X | X | X |
 | **Total de Horas Individual** | **120** | **120** | **120** | **120** | **120** |
 
