@@ -9,51 +9,34 @@ Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de c
 | **Vídeo 3: Do Protótipo ao Código - Agilidade** | Como transformamos o design da loja (protótipo) em código real, usando técnicas ágeis. | Pessoas interessadas em processos de desenvolvimento. |
 
 <br><br>
-## Cronograma de Execução (Proposta)
+## Cronograma de Execução (Sprints)
 
-| Atividade | Data de Início | Data de Término | Responsáveis |
+| Sprint / Atividade | Data de Início | Data de Término | Responsáveis |
 | :--- | :--- | :--- | :--- |
-| **Planejamento:** Definição do REA, temas dos vídeos, estruturação do repositório GitHub e entrega da proposta. | 15/03/2026 | 23/03/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
-| **Desenvolvimento dos Roteiros:** Elaboração dos roteiros detalhados para os Vídeos 1, 2 e 3. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
-| **Desenvolvimento do Código:** Criação e documentação do código HTML/CSS/JavaScript básico que será usado nos vídeos. | 01/04/2026 | 30/04/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
-| **Gravação e Edição de Vídeos:** Gravação dos vídeos (com legendas) e edição final. | 01/05/2026 | 15/05/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
-| **Entrega Final:** Upload dos vídeos, revisão do GitHub e envio para o professor. | 15/05/2026 | 02/06/2026 | Paulo Cesar, Higor Silva, Carlos Andrade, Victor Neves |
+| **Sprint 1: Planejamento e Setup** <br> (Definição do REA, Trello, GitHub e Arquitetura) | 15/03/2026 | 31/03/2026 | Todos os membros |
+| **Sprint 2: Desenvolvimento de Código** <br> (Portal REA e Módulos do E-commerce) | 01/04/2026 | 15/04/2026 | Todos os membros |
+| **Sprint 3: Materiais e Roteiros** <br> (Templates, Material de Apoio e Roteirização) | 16/04/2026 | 30/04/2026 | Todos os membros |
+| **Sprint 4: Produção e Testes** <br> (Gravação no Meet e Revisão de Código) | 01/05/2026 | 15/05/2026 | Todos os membros |
+| **Sprint 5: Documentação e Entrega Final** <br> (README, Refinamento e Upload) | 16/05/2026 | 02/06/2026 | Todos os membros |
 
 <br><br>
-## Cronograma Resumido
-
-*   **Sprint 1 (Março):** Planejamento, estruturação do GitHub e definição de requisitos.
-*   **Sprint 2-4 (Abril):** Desenvolvimento do código-fonte e prototipação.
-*   **Sprint 5-7 (Maio):** Gravação, edição de vídeos e documentação final.
-*   **Entrega Final:** 02/06/2026
-
-<br><br>
-## Planejamento e Divisão de horas das Tarefas (distribuição de Carga Horária).
-
-Sugestão de cronograma baseada na carga horária de **120 horas totais**:
-
-| Atividade | Carga Horária |
-| :--- | :---: |
-| Reuniões de Sprint / Scrum | 20h |
-| Estudo de Tecnologias (HTML/CSS/JS) | 30h |
-| Gravação e Edição das Vídeo-Aulas | 20h |
-| Desenvolvimento da Interface E-commerce | 30h |
-| Documentação e README | 20h |
-| **Total** | **120h** |
-
-<br><br>
-# Planejamento de Horas pra cada membro da Equipe ADSTech
+# Planejamento de Horas
 
 Carga horária total prevista para cada integrante: **120 horas**.
 
 | Atividades | Horas | Paulo | Higor | Carlos | Victor |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| Reuniões de Sprint e Scrum | 20 | X | X | X | X |
-| Estudo de Tecnologias (HTML/CSS/JS) | 25 | X | X | X | X |
-| Elaboração de Roteiros (REA) | 15 |X | X | X | X |
-| Desenvolvimento do E-commerce (Base) | 30 | X | X | X | X |
-| Gravação e Edição de Vídeos | 15 | X | X | X | X |
-| Documentação e GitHub Pages | 15 | X | X | X | X |
-| **Total de Horas Individual** | **120** | **120** | **120** | **120** | **120** |
+| Reuniões semanais de alinhamento | 15 | ✅ | ✅ | ✅ | ✅ |
+| Estudo (HTML, CSS, JS e GitHub) | 20 | ✅ | ✅ | ✅ | ✅ |
+| Criação e atualização das tarefas no Trello | 10 | ✅ | ✅ | ❌ | ❌ |
+| Desenvolvimento do Portal REA (Site Base) | 35 | ✅ | ✅ | ❌ | ❌ |
+| Desenvolvimento Módulos (Código E-commerce) | 35 | ❌ | ❌ | ✅ | ✅ |
+| Criação de template para os slides | 5 | ❌ | ❌ | ✅ | ✅ |
+| Criação de material de apoio / exercícios | 15 | ❌ | ❌ | ✅ | ✅ |
+| Roteirização das aulas | 10 | ✅ | ✅ | ✅ | ✅ |
+| Gravação das aulas no Meet | 10 | ✅ | ✅ | ✅ | ✅ |
+| Documentação técnica e README | 10 | ✅ | ✅ | ❌ | ❌ |
+| Revisão e Testes do código | 10 | ✅ | ✅ | ✅ | ✅ |
+| **Total de Horas** |  | **120** | **120** | **120** | **120** |
 
 ---
