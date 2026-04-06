@@ -106,7 +106,8 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 ## Link para acesso da ferramenta de gestão de projetos - Trello
 
-- [Trello/Kanban](https://trello.com/b/lfvSVS5W/adstech)
+<a href="https://trello.com/b/lfvSVS5W/adstech" target="_blank" rel="noopener noreferrer">Trello/Kanban</a>
+
 <br><br>
 
 
