@@ -93,7 +93,7 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 ---
 
-## Links para Documentos
+## Links para Documentos neste repositório
 
 - [Documentação](./Documentacao/Documentacao.md)
 <br><br>
@@ -103,5 +103,11 @@ Carga horária total prevista para cada integrante: **120 horas**.
 <br><br>
 - [Conteúdo de Recursos Educacionais Abertos (REA)](./REA-Conteudo)
 <br><br>
+
+## Link para acesso da ferramenta de gestão de projetos - Trello
+
+- [Trello/Kanban](https://trello.com/b/lfvSVS5W/adstech)
+<br><br>
+
 
 ---
