@@ -81,7 +81,7 @@ Carga horária total prevista para cada integrante: **120 horas**.
 | Criação de template para os slides | 5 | ❌ | ❌ | ✅ | ✅ |
 | Criação de material de apoio / exercícios | 15 | ❌ | ❌ | ✅ | ✅ |
 | Roteirização das aulas | 10 | ✅ | ✅ | ✅ | ✅ |
-| Gravação das aulas no Meet | 10 | ✅ | ✅ | ✅ | ✅ |
+| Gravação das aulas no YouTube | 10 | ✅ | ✅ | ✅ | ✅ |
 | Documentação técnica e README | 10 | ✅ | ✅ | ❌ | ❌ |
 | Revisão e Testes do código | 10 | ✅ | ✅ | ✅ | ✅ |
 | **Total de Horas** |  | **120** | **120** | **120** | **120** |
