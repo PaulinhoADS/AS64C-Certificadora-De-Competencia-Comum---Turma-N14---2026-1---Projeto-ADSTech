@@ -3,65 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSTech - Recurso Educacional Aberto</title>
+    <title>ADSTech - Aprenda Front-End</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">ADSTech Hub</div>
-        <ul class="nav-links">
-            <li><a href="#" onclick="mostrarSecao('home')">Início</a></li>
-            <li><a href="#" onclick="mostrarSecao('modulos')">Módulos</a></li>
-            <li><a href="#" onclick="mostrarSecao('equipe')">Equipe</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="secao ativa dark-bg">
-        <div class="hero-content">
-            <h1>Crie seu E-commerce do Zero</h1>
-            <p>Aprenda os fundamentos de HTML, CSS e JavaScript de forma prática e lúdica.</p>
-            <button class="btn-primario" onclick="mostrarSecao('modulos')">COMEÇAR AGORA</button>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo-adstech.png" alt="Logo ADSTech" class="img-logo">
+            <span>ADSTech Hub</span>
         </div>
-    </section>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" onclick="mostrarSecao('home')">Início</a></li>
+                <li><a href="#" onclick="mostrarSecao('modulos')">Módulos de Ensino</a></li>
+                <li><a href="#" onclick="mostrarSecao('jornada')">Nossa Jornada</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="modulos" class="secao light-bg">
-        <h2 class="titulo-secao">Nossos Módulos</h2>
-        <p class="subtitulo">Escolha por onde quer começar a sua jornada no Front-End.</p>
-        
-        <div class="grid-cards">
-            <div class="card" onclick="carregarAula('html')">
-                <div class="card-icon">📄</div>
-                <h3>Módulo 1: HTML</h3>
-                <p>Estruture a sua loja virtual.</p>
+    <main>
+        <section id="home" class="secao ativa">
+            <div class="hero-container">
+                <div class="hero-texto">
+                    <h1>Desvende o mundo do <span>Front-End</span></h1>
+                    <p class="texto-didatico">
+                        Você já se perguntou como os sites que você usa todos os dias são construídos? 
+                        O <strong>Front-End</strong> é a parte visual da web, tudo aquilo com o qual você interage: botões, cores, textos e imagens. 
+                        Neste mini-curso, vamos te ensinar a construir a sua própria loja virtual (e-commerce) do zero, de forma simples e direta.
+                    </p>
+                    <button class="btn-destaque" onclick="mostrarSecao('modulos')">Comece a Aprender</button>
+                </div>
+                <div class="hero-imagem">
+                    <img src="imagem-hero-frontend.png" alt="Ilustração Front-End">
+                </div>
             </div>
-            <div class="card" onclick="carregarAula('css')">
-                <div class="card-icon">🎨</div>
-                <h3>Módulo 2: CSS</h3>
-                <p>Deixe sua loja com um visual incrível.</p>
+        </section>
+
+        <section id="modulos" class="secao oculta">
+            <div class="titulo-centralizado">
+                <h2>Trilha de Conhecimento</h2>
+                <p>Nossos módulos foram pensados para quem nunca programou. Siga a ordem e construa sua loja!</p>
             </div>
-            <div class="card" onclick="carregarAula('js')">
-                <div class="card-icon">⚙️</div>
-                <h3>Módulo 3: JavaScript</h3>
-                <p>Adicione interatividade e botões funcionais.</p>
+            
+            <div class="grid-cards">
+                <div class="card" onclick="carregarAula('html')">
+                    <img src="thumb-html.png" alt="Ícone HTML" class="card-img">
+                    <h3>1. Estrutura (HTML)</h3>
+                    <p>O esqueleto do site. Aprenda a colocar os textos, títulos e imagens na tela.</p>
+                </div>
+                <div class="card" onclick="carregarAula('css')">
+                    <img src="thumb-css.png" alt="Ícone CSS" class="card-img">
+                    <h3>2. Estilo (CSS)</h3>
+                    <p>A maquiagem do site. Descubra como aplicar cores, fontes e organizar o layout.</p>
+                </div>
+                <div class="card" onclick="carregarAula('js')">
+                    <img src="thumb-js.png" alt="Ícone JS" class="card-img">
+                    <h3>3. Ação (JavaScript)</h3>
+                    <p>O cérebro do site. Crie interatividade, como o botão de adicionar ao carrinho.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sala-aula" class="secao oculta">
+            <button class="btn-voltar" onclick="mostrarSecao('modulos')">⬅ Voltar para os Módulos</button>
+            <div id="conteudo-aula" class="aula-container">
+                </div>
+        </section>
+
+        <section id="jornada" class="secao oculta">
+            <div class="titulo-centralizado">
+                <h2>Como chegamos até aqui?</h2>
+                <p>Este portal é o resultado de 4 semestres de aprendizado no curso de Análise e Desenvolvimento de Sistemas (ADS).</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1º Semestre: A Base</h3>
+                        <p>Aprendemos Lógica de Programação. Descobrimos como os computadores "pensam" e resolvem problemas através de algoritmos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2º Semestre: Dados</h3>
+                        <p>Mergulhamos em Bancos de Dados, entendendo como armazenar com segurança informações de usuários e produtos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>3º Semestre: Estruturas</h3>
+                        <p>Dominamos a Programação Orientada a Objetos (POO), criando sistemas mais robustos e organizados.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>4º Semestre: Web e Agilidade</h3>
+                        <p>Juntamos tudo! Aprendemos Front-End, Back-End e Metodologias Ágeis (Scrum) para criar este projeto completo de e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <h3>Desenvolvido pela Equipe ADSTech</h3>
+            <p>Alunos da Turma N14 (2026/1) - Disciplina Certificadora de Competência Comum</p>
+            
+            <div class="equipe-grid">
+                <div class="integrante">
+                    <img src="foto-paulo.png" alt="Paulo" class="foto-perfil">
+                    <p>Paulo Leite</p>
+                    <a href="URL_LINKEDIN_AQUI" target="_blank">LinkedIn / GitHub</a>
+                </div>
+                <div class="integrante">
+                    <img src="foto-higor.png" alt="Higor" class="foto-perfil">
+                    <p>Higor Silva</p>
+                    <a href="URL_LINKEDIN_AQUI" target="_blank">LinkedIn / GitHub</a>
+                </div>
+                <div class="integrante">
+                    <img src="foto-carlos.png" alt="Carlos" class="foto-perfil">
+                    <p>Carlos Andrade</p>
+                    <a href="URL_LINKEDIN_AQUI" target="_blank">LinkedIn / GitHub</a>
+                </div>
+                <div class="integrante">
+                    <img src="foto-victor.png" alt="Victor" class="foto-perfil">
+                    <p>Victor Neves</p>
+                    <a href="URL_LINKEDIN_AQUI" target="_blank">LinkedIn / GitHub</a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="sala-aula" class="secao light-bg oculta">
-        <button class="btn-voltar" onclick="mostrarSecao('modulos')">⬅ Voltar aos Módulos</button>
-        
-        <div id="conteudo-aula" class="conteudo-aula">
-            </div>
-    </section>
-
-    <section id="equipe" class="secao light-bg oculta">
-        <h2 class="titulo-secao">Nossa Equipe</h2>
-        <p class="subtitulo">Conheça os estudantes por trás do projeto ADSTech.</p>
-        <div class="team-grid">
-            <p>Paulo Cesar Leite | Higor Claro da Silva | Carlos Henrique de Andrade | Victor Hugo Concolato Neves</p>
+        <div class="copyright">
+            &copy; 2026 ADSTech. Projeto de Extensão (REA). Todos os direitos reservados.
         </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
