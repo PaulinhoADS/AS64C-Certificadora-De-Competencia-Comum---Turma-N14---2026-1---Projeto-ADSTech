@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSTech - Recurso Educacional Aberto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ADSTech Hub</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="mostrarSecao('home')">Início</a></li>
+            <li><a href="#" onclick="mostrarSecao('modulos')">Módulos</a></li>
+            <li><a href="#" onclick="mostrarSecao('equipe')">Equipe</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="secao ativa dark-bg">
+        <div class="hero-content">
+            <h1>Crie seu E-commerce do Zero</h1>
+            <p>Aprenda os fundamentos de HTML, CSS e JavaScript de forma prática e lúdica.</p>
+            <button class="btn-primario" onclick="mostrarSecao('modulos')">COMEÇAR AGORA</button>
+        </div>
+    </section>
+
+    <section id="modulos" class="secao light-bg">
+        <h2 class="titulo-secao">Nossos Módulos</h2>
+        <p class="subtitulo">Escolha por onde quer começar a sua jornada no Front-End.</p>
+        
+        <div class="grid-cards">
+            <div class="card" onclick="carregarAula('html')">
+                <div class="card-icon">📄</div>
+                <h3>Módulo 1: HTML</h3>
+                <p>Estruture a sua loja virtual.</p>
+            </div>
+            <div class="card" onclick="carregarAula('css')">
+                <div class="card-icon">🎨</div>
+                <h3>Módulo 2: CSS</h3>
+                <p>Deixe sua loja com um visual incrível.</p>
+            </div>
+            <div class="card" onclick="carregarAula('js')">
+                <div class="card-icon">⚙️</div>
+                <h3>Módulo 3: JavaScript</h3>
+                <p>Adicione interatividade e botões funcionais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sala-aula" class="secao light-bg oculta">
+        <button class="btn-voltar" onclick="mostrarSecao('modulos')">⬅ Voltar aos Módulos</button>
+        
+        <div id="conteudo-aula" class="conteudo-aula">
+            </div>
+    </section>
+
+    <section id="equipe" class="secao light-bg oculta">
+        <h2 class="titulo-secao">Nossa Equipe</h2>
+        <p class="subtitulo">Conheça os estudantes por trás do projeto ADSTech.</p>
+        <div class="team-grid">
+            <p>Paulo Cesar Leite | Higor Claro da Silva | Carlos Henrique de Andrade | Victor Hugo Concolato Neves</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
