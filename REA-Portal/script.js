@@ -1,60 +1,93 @@
-// Função simples para esconder todas as seções e mostrar apenas a desejada
+/**
+ * LÓGICA DE NAVEGAÇÃO SPA (Single Page Application)
+ * Esta função recebe o ID da seção que queremos mostrar,
+ * oculta todas as outras e exibe apenas a escolhida.
+ */
 function mostrarSecao(idSecao) {
-    // 1. Busca todas as seções do site
+    // Pega todas as tags que têm a classe "secao"
     const secoes = document.querySelectorAll('.secao');
     
-    // 2. Remove a classe 'ativa' e adiciona 'oculta' em todas elas
+    // Varre a lista de seções e esconde todas
     secoes.forEach(secao => {
         secao.classList.remove('ativa');
         secao.classList.add('oculta');
     });
 
-    // 3. Pega a seção específica que o usuário clicou e a exibe
+    // Encontra a seção exata que o usuário clicou e a mostra na tela
     const secaoDesejada = document.getElementById(idSecao);
     secaoDesejada.classList.remove('oculta');
     secaoDesejada.classList.add('ativa');
+
+    // Rola a página para o topo suavemente
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Objeto que funciona como um "Banco de Dados" simples para os nossos módulos
+/**
+ * BANCO DE DADOS DOS MÓDULOS (Conteúdo Didático)
+ * Aqui guardamos os textos, títulos e links de vídeo para pessoas leigas.
+ */
 const baseDeAulas = {
     'html': {
-        titulo: "Módulo 1: Estruturando com HTML",
-        texto: "O HTML é o esqueleto da nossa loja. É aqui que dizemos onde fica a imagem do produto, o título e o botão de comprar. Assista ao vídeo abaixo para darmos os primeiros passos!",
-        // Link de exemplo do YouTube. Basta trocar o final (após o /embed/) depois que gravarem.
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        titulo: "Módulo 1: O Esqueleto (HTML)",
+        texto: `
+            <p>Imagine que você está construindo uma casa. O <strong>HTML</strong> (HyperText Markup Language) 
+            são os tijolos, as paredes e as portas. Na web, ele é usado para estruturar o conteúdo.</p><br>
+            <p>Nesta aula, vamos aprender a criar arquivos HTML e usar "tags" (etiquetas) para dizer ao 
+            computador: <em>"Ei, isto aqui é um título principal da minha loja, e aquilo ali é a imagem do produto"</em>.</p>
+        `,
+        // Lembre-se de colocar o link "Embed" do YouTube depois
+        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     'css': {
-        titulo: "Módulo 2: Estilizando com CSS",
-        texto: "Ninguém gosta de uma loja feia, certo? O CSS é a roupa do nosso site. Vamos aprender a colocar cores, alinhar os produtos e deixar tudo com cara de profissional.",
+        titulo: "Módulo 2: A Maquiagem (CSS)",
+        texto: `
+            <p>Se o HTML é a parede de tijolos, o <strong>CSS</strong> (Cascading Style Sheets) é a tinta, 
+            o papel de parede e a decoração. Ele é totalmente responsável pelo visual!</p><br>
+            <p>Neste vídeo, vamos pegar aquele esqueleto sem graça da loja virtual e transformá-lo. 
+            Você vai aprender a alterar cores de fundo, mudar os tipos de fontes e alinhar os produtos 
+            lado a lado para ficar com cara de e-commerce profissional.</p>
+        `,
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     'js': {
-        titulo: "Módulo 3: Interatividade com JavaScript",
-        texto: "O JavaScript é o cérebro da operação. Com ele, quando o cliente clica em 'Comprar', nós calculamos o frete, mostramos mensagens e damos vida à página.",
+        titulo: "Módulo 3: O Cérebro (JavaScript)",
+        texto: `
+            <p>Nossa casa já está construída e pintada, mas as luzes não acendem sozinhas, certo? 
+            É aí que entra o <strong>JavaScript</strong>. Ele é a energia e as engrenagens do site.</p><br>
+            <p>No e-commerce, o JavaScript é quem faz a mágica acontecer: é ele que entende quando o 
+            cliente clica no botão "Comprar", faz o cálculo matemático do frete e faz o carrinho de compras 
+            piscar na tela. Vamos dar vida ao nosso projeto!</p>
+        `,
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
 };
 
-// Função para montar a tela de aula baseada no card clicado
+/**
+ * FUNÇÃO PARA INJETAR A AULA DINAMICAMENTE
+ * Pega os dados do objeto acima e constrói a tela da aula.
+ */
 function carregarAula(moduloEscolhido) {
-    // Busca os dados do módulo no nosso objeto acima
     const dados = baseDeAulas[moduloEscolhido];
-    
-    // Encontra a div onde vamos injetar o conteúdo
     const containerConteudo = document.getElementById('conteudo-aula');
     
-    // Injeta o HTML formatado com os dados específicos do módulo
+    // Injeta o HTML dentro da div da aula, misturando o layout com os textos
     containerConteudo.innerHTML = `
         <h2>${dados.titulo}</h2>
-        <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.5;">${dados.texto}</p>
         
-        <div class="video-container">
-            <iframe src="${dados.videoUrl}" allowfullscreen></iframe>
+        <div class="video-wrapper">
+            <iframe src="${dados.videoUrl}" title="Vídeo Aula" allowfullscreen></iframe>
         </div>
         
-        <p><strong>Dica de ouro:</strong> Digite os códigos junto com o vídeo para fixar o aprendizado!</p>
+        <div class="texto-aula">
+            ${dados.texto}
+        </div>
+        
+        <div style="background: #29292e; padding: 15px; border-left: 4px solid #00E676; border-radius: 4px;">
+            <strong>Dica Prática:</strong> Assista ao vídeo e pause sempre que precisar digitar o código no seu editor. 
+            A melhor forma de aprender é colocando a mão na massa!
+        </div>
     `;
     
-    // Depois de preparar o conteúdo, muda a tela para a "sala de aula"
+    // Mostra a seção de aula pronta
     mostrarSecao('sala-aula');
 }
