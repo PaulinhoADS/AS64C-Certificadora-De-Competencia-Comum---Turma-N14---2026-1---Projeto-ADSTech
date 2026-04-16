@@ -1,4 +1,4 @@
-# 🖥️ Documentação Técnica do Portal REA - ADSTech
+# Documentação Técnica do Portal REA - ADSTech
 
 ## 1. Objetivo da Tarefa
 O objetivo desta etapa foi a implementação final da plataforma web (Portal REA) do projeto ADSTech. A interface foi projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
