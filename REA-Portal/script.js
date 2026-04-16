@@ -36,7 +36,7 @@ const baseDeAulas = {
             computador: <em>"Ei, isto aqui é um título principal da minha loja, e aquilo ali é a imagem do produto"</em>.</p>
         `,
         // Lembre-se de colocar o link "Embed" do YouTube depois
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://www.youtube.com/watch?v=ZnZqB5Z75zI"
     },
     'css': {
         titulo: "Módulo 2: A Maquiagem (CSS)",
@@ -47,7 +47,7 @@ const baseDeAulas = {
             Você vai aprender a alterar cores de fundo, mudar os tipos de fontes e alinhar os produtos 
             lado a lado para ficar com cara de e-commerce profissional.</p>
         `,
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://www.youtube.com/watch?v=wcW8SvbnJYE"
     },
     'js': {
         titulo: "Módulo 3: O Cérebro (JavaScript)",
@@ -58,7 +58,7 @@ const baseDeAulas = {
             cliente clica no botão "Comprar", faz o cálculo matemático do frete e faz o carrinho de compras 
             piscar na tela. Vamos dar vida ao nosso projeto!</p>
         `,
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://www.youtube.com/watch?v=HX43QiFApWc"
     }
 };
 
