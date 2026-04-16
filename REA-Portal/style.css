@@ -1,8 +1,8 @@
-/* --- VARIÁVEIS DE CORES (Tema Escuro Elegante) --- */
+/* --- VARIÁVEIS DE CORES --- */
 :root {
     --bg-principal: #121214;
     --bg-secundario: #202024;
-    --cor-destaque: #00E676; /* Verde Neon tecnológico */
+    --cor-destaque: #00E676;
     --cor-texto: #E1E1E6;
     --cor-texto-mudo: #A8A8B3;
 }
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5% auto; /* Responsivo */
+    padding: 20px 5%;
     background-color: var(--bg-secundario);
     border-bottom: 2px solid #29292e;
 }
@@ -41,10 +41,10 @@ body {
 }
 
 .img-logo {
-    width: 40px; /* Tamanho do placeholder da logo */
+    width: 40px;
     height: 40px;
     border-radius: 5px;
-    background-color: #333; /* Fundo temporário enquanto não tem imagem */
+    background-color: #333; 
 }
 
 .nav-links {
@@ -64,7 +64,7 @@ body {
     color: var(--cor-destaque);
 }
 
-/* --- CONTROLE DE SEÇÕES DO SINGLE PAGE --- */
+/* --- CONTROLE DE SEÇÕES --- */
 .secao {
     display: none;
     padding: 60px 5%;
@@ -85,13 +85,13 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- SEÇÃO HOME (HERO) --- */
+/* --- SEÇÃO HOME --- */
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap; /* Adapta para celular */
+    flex-wrap: wrap; 
 }
 
 .hero-texto {
@@ -141,7 +141,7 @@ body {
 .hero-imagem img {
     max-width: 100%;
     border-radius: 10px;
-    background-color: #333; /* Fundo temporário */
+    background-color: #333;
     min-height: 300px;
     width: 100%;
     object-fit: cover;
@@ -183,7 +183,7 @@ body {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
-    background-color: #444; /* Temporário */
+    background-color: #444; 
     border-radius: 10px;
 }
 
@@ -224,10 +224,9 @@ body {
     color: var(--cor-texto-mudo);
 }
 
-/* Vídeo Responsivo */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     margin-bottom: 30px;
 }
@@ -242,7 +241,26 @@ body {
     border: none;
 }
 
-/* --- TIMELINE (JORNADA) --- */
+/* --- PÁGINA SOBRE: RESUMO E TIMELINE --- */
+.resumo-curso {
+    background-color: var(--bg-secundario);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--cor-destaque);
+}
+
+.resumo-curso h2 {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+.resumo-curso p {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    margin-bottom: 15px;
+}
+
 .timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -258,7 +276,7 @@ body {
 
 .timeline-dot {
     position: absolute;
-    left: -39px; /* Alinha o ponto na linha */
+    left: -39px; 
     top: 5px;
     width: 15px;
     height: 15px;
@@ -272,16 +290,19 @@ body {
     margin-bottom: 10px;
 }
 
-/* --- RODAPÉ E EQUIPE --- */
-.rodape {
-    background-color: var(--bg-secundario);
-    padding: 40px 5% 20px;
+/* --- PÁGINA SOBRE: EQUIPE --- */
+.equipe-container {
+    margin-top: 80px;
     text-align: center;
-    border-top: 2px solid #29292e;
+    background-color: var(--bg-secundario);
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.rodape-conteudo h3 {
+.equipe-container h3 {
     color: var(--cor-destaque);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
 .equipe-grid {
@@ -289,7 +310,7 @@ body {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .integrante {
@@ -300,11 +321,11 @@ body {
 }
 
 .foto-perfil {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 2px solid var(--cor-destaque);
-    background-color: #444; /* Fundo temporário */
+    border: 3px solid var(--cor-destaque);
+    background-color: #444; 
     object-fit: cover;
 }
 
@@ -318,8 +339,12 @@ body {
     color: var(--cor-destaque);
 }
 
-.copyright {
-    margin-top: 30px;
-    font-size: 0.9rem;
+/* --- RODAPÉ GLOBAL MINIMALISTA --- */
+.rodape-global {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #29292e;
+    margin-top: 40px;
     color: #666;
+    font-size: 0.9rem;
 }
