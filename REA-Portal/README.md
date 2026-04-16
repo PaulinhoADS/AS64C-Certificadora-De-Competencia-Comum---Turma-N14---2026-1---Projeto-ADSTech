@@ -1,3 +1,3 @@
 ## Pasta para armazenar os arquivos HTML, CSS e JavaScript do Portal REA
 
-Pasta para armazenamento dos arquivos de estrutura e criação do pages da plataforma/portal REA - Projeto ADSTech
+Armazenamento dos arquivos de estrutura e criação do pages da plataforma web (Portal REA) que hospedará as vídeo-aulas e os materiais didáticos do projeto ADSTech. Na construção do portal focamos em um layout dinâmico, intuitivo para leigos e seguindo as boas práticas de desenvolvimento Front-End abordadas no curso.
