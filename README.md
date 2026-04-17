@@ -62,10 +62,11 @@ Conforme os requisitos da disciplina, o REA será organizado em módulos temáti
 | Sprint / Atividade | Data de Início | Data de Término | Responsáveis |
 | :--- | :--- | :--- | :--- |
 | **Sprint 1: Planejamento e Setup** <br> (Definição do REA, Trello, GitHub e Arquitetura) | 15/03/2026 | 31/03/2026 | Todos os membros |
-| **Sprint 2: Desenvolvimento de Código** <br> (Portal REA e Módulos do E-commerce) | 01/04/2026 | 15/04/2026 | Todos os membros |
-| **Sprint 3: Materiais e Roteiros** <br> (Templates, Material de Apoio e Roteirização) | 16/04/2026 | 30/04/2026 | Todos os membros |
-| **Sprint 4: Produção e Testes** <br> (Gravação no Meet e Revisão de Código) | 01/05/2026 | 15/05/2026 | Todos os membros |
-| **Sprint 5: Documentação e Entrega Final** <br> (README, Refinamento e Upload) | 16/05/2026 | 02/06/2026 | Todos os membros |
+| **Sprint 2: Planejamento de Código** <br> (Portal REA e Módulos do E-commerce) | 01/04/2026 | 15/04/2026 | Todos os membros |
+| **Sprint 3: Desenvolvimento de Código** <br> (Portal REA e Módulos do E-commerce) | 16/04/2026 | 30/04/2026 | Todos os membros |
+| **Sprint 4: Materiais e Roteiros** <br> (Templates, Material de Apoio e Roteirização) | 01/05/2026 | 10/05/2026 | Todos os membros |
+| **Sprint 5: Produção e Testes** <br> (Gravação no Meet e Revisão de Código) | 11/05/2026 | 20/05/2026 | Todos os membros |
+| **Sprint 6: Documentação e Entrega Final** <br> (README, Refinamento e Upload) | 21/05/2026 | 02/06/2026 | Todos os membros |
 
 # Planejamento de Horas
 
