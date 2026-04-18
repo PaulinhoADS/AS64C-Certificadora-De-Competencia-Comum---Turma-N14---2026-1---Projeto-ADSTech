@@ -56,3 +56,24 @@
 .btn-submit:hover {
     background-color: #2980b9;
 }
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.toast.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}

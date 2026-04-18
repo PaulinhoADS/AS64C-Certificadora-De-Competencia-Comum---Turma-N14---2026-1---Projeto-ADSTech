@@ -8,10 +8,20 @@ const salvarProduto = (event) => {
     console.log(produtos[id]);
     localStorage.setItem('produtos',JSON.stringify(produtos));
     event.target.reset();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    notificar();
 }
 
 const getId = () => {
     const id = parseInt(localStorage.nextId || '0');
     localStorage.setItem('nextId',`${id+1}`);
     return id;
+}
+
+const notificar = () => {
+    const toast = document.getElementById('toast');
+    toast.classList.add('mostrar');
+    setTimeout(() => {
+        toast.classList.remove('mostrar');
+    }, 3000);
 }
