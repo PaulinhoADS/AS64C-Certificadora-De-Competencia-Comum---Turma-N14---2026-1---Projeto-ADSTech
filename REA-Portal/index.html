@@ -6,7 +6,7 @@
     <title>ADSTech - Aprenda Front-End</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="dark">
 
     <header class="navbar">
         <div class="logo">
@@ -16,8 +16,13 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#" onclick="mostrarSecao('home')">Início</a></li>
-                <li><a href="#" onclick="mostrarSecao('modulos')">Módulos de Ensino</a></li>
+                <li><a href="#" onclick="mostrarSecao('modulos')">Módulos</a></li>
                 <li><a href="#" onclick="mostrarSecao('sobre')">Sobre</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn-theme" title="Alternar Tema">
+                        <span class="icon-theme">🌓</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -28,11 +33,10 @@
                 <div class="hero-texto">
                     <h1>Desvende o mundo do <span>Front-End</span></h1>
                     <p class="texto-didatico">
-                        Você já se perguntou como os sites que você usa todos os dias são construídos? 
-                        O <strong>Front-End</strong> é a parte visual da web, tudo aquilo com o qual você interage: botões, cores, textos e imagens. 
-                        Neste mini-curso, vamos te ensinar a construir a sua própria loja virtual (e-commerce) do zero, de forma simples e direta.
+                        O <strong>Front-End</strong> é a interface visual com a qual os usuários interagem. 
+                        Neste portal, ensinamos você a construir um e-commerce funcional utilizando as tecnologias base da web.
                     </p>
-                    <button class="btn-destaque" onclick="mostrarSecao('modulos')">Comece a Aprender</button>
+                    <button class="btn-destaque" onclick="mostrarSecao('modulos')">Começar Agora</button>
                 </div>
                 <div class="hero-imagem">
                     <img src="imagem-hero-frontend.png" alt="Ilustração Front-End">
@@ -60,7 +64,7 @@
                 <div class="card" onclick="carregarAula('js')">
                     <img src="thumb-js.png" alt="Ícone JS" class="card-img">
                     <h3>3. Ação (JavaScript)</h3>
-                    <p>O cérebro do site. Crie interatividade, como o botão de adicionar ao carrinho.</p>
+                    <p>O cérebro do site. Crie interatividade e funções para o seu e-commerce.</p>
                 </div>
             </div>
         </section>
@@ -72,60 +76,18 @@
         </section>
 
         <section id="sobre" class="secao oculta">
-            
             <div class="resumo-curso">
                 <h2>Sobre o Projeto E-commerce Front-End</h2>
-                <p>
-                    Este portal é o resultado prático de uma jornada de aprendizado contínuo. Nosso objetivo com os módulos de ensino é desmistificar a programação para leigos, mostrando que qualquer pessoa pode construir uma interface web do zero. 
-                </p>
-                <p>
-                    Ao passar pelas aulas de <strong>HTML, CSS e JavaScript</strong>, o aluno constrói, passo a passo, uma vitrine virtual funcional. O Front-End moderno vai além de códigos; trata-se de criar experiências, acessibilidade e interfaces responsivas. Este projeto comprova que a união de metodologias ágeis com o desenvolvimento web resulta em soluções reais e prontas para o mercado de tecnologia.
-                </p>
+                <p>Este portal é o resultado prático de uma jornada de aprendizado no curso de ADS na UTFPR.</p>
+                <p>Ao passar pelas aulas, o aluno constrói uma vitrine virtual funcional, unindo teoria e prática.</p>
             </div>
 
             <div class="titulo-centralizado" style="margin-top: 60px;">
-                <h2>A Jornada até Aqui</h2>
-                <p>Nossa evolução ao longo de 4 semestres no curso de Análise e Desenvolvimento de Sistemas.</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>1º Semestre: A Base</h3>
-                        <p>Lógica de Programação, Arquitetura de Computadores, Design de Interação (IHC) e Matemática. A fundação de como os computadores operam e como pensar soluções.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2º Semestre: Dados e Sistemas</h3>
-                        <p>Programação Orientada a Objetos, Banco de Dados, Estrutura de Dados e Sistemas Operacionais. Criando sistemas mais robustos e armazenando informações.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>3º Semestre: Web e Gestão</h3>
-                        <p>Desenvolvimento Web, Modelagem, Redes e Gestão de Projetos de TI (com foco em Desenvolvimento Ágil). O salto para a internet e trabalho em equipe.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>4º Semestre: Aplicação (Atual)</h3>
-                        <p>Desenvolvimento Web Front-End e Certificadora de Competência Comum. A união de tudo aprendido para a criação deste Recurso Educacional Aberto (REA).</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="equipe-container">
-                <h3>Desenvolvido pela Equipe ADSTech</h3>
-                <p>Turma N14 (2026/1) - UTFPR</p>
+                <h2>Nossa Equipe</h2>
                 <div class="equipe-grid">
                     <div class="integrante">
-                        <img src="foto-carlos.png" alt="Carlos" class="foto-perfil">
-                        <p>Carlos Andrade</p>
+                        <img src="foto-paulo.png" alt="Paulo" class="foto-perfil">
+                        <p>Paulo Leite</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
@@ -134,8 +96,8 @@
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
-                        <img src="foto-paulo.png" alt="Paulo" class="foto-perfil">
-                        <p>Paulo Leite</p>
+                        <img src="foto-carlos.png" alt="Carlos" class="foto-perfil">
+                        <p>Carlos Andrade</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
