@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSTech - Recurso Educacional Aberto</title>
+    <title>ADSTech - Aprenda Front-End</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-theme="dark">
@@ -20,9 +20,8 @@
                 <li><a href="#" onclick="mostrarSecao('sobre')">Sobre</a></li>
                 
                 <li>
-                    <button id="btn-alternar-tema" class="btn-theme" title="Trocar Tema">
-                        <span id="tema-icone">🌓</span> 
-                        <span id="tema-texto">Tema</span>
+                    <button id="theme-toggle" class="btn-theme" title="Alternar Tema Escuro/Claro">
+                        <span class="icon-theme">🌓 Tema</span>
                     </button>
                 </li>
             </ul>
@@ -35,10 +34,11 @@
                 <div class="hero-texto">
                     <h1>Desvende o mundo do <span>Front-End</span></h1>
                     <p class="texto-didatico">
-                        O <strong>Front-End</strong> é a parte visual da web, tudo aquilo com o qual você interage. 
-                        Neste portal, vamos te ensinar a construir a sua própria loja virtual (e-commerce) do zero, de forma simples e direta para o projeto de extensão ELLP.
+                        Você já se perguntou como os sites que você usa todos os dias são construídos? 
+                        O <strong>Front-End</strong> é a parte visual da web, tudo aquilo com o qual você interage: botões, cores, textos e imagens. 
+                        Neste mini-curso, vamos te ensinar a construir a sua própria loja virtual (e-commerce) do zero, de forma simples e direta.
                     </p>
-                    <button class="btn-destaque" onclick="mostrarSecao('modulos')">Começar Agora</button>
+                    <button class="btn-destaque" onclick="mostrarSecao('modulos')">Comece a Aprender</button>
                 </div>
                 <div class="hero-imagem">
                     <img src="imagem-hero-frontend.png" alt="Ilustração Front-End">
@@ -72,7 +72,7 @@
         </section>
 
         <section id="sala-aula" class="secao oculta">
-            <button class="btn-voltar" onclick="mostrarSecao('modulos')">⬅ Voltar aos Módulos</button>
+            <button class="btn-voltar" onclick="mostrarSecao('modulos')">⬅ Voltar para os Módulos</button>
             
             <div id="conteudo-aula" class="aula-container">
             </div>
@@ -86,42 +86,42 @@
                     Este portal é o resultado prático de uma jornada de aprendizado contínuo. Nosso objetivo com os módulos de ensino é desmistificar a programação para leigos, mostrando que qualquer pessoa pode construir uma interface web do zero. 
                 </p>
                 <p>
-                    O projeto comprova que a união de metodologias ágeis com o desenvolvimento web resulta em soluções reais e prontas para o mercado de tecnologia.
+                    Ao passar pelas aulas de <strong>HTML, CSS e JavaScript</strong>, o aluno constrói, passo a passo, uma vitrine virtual funcional. O Front-End moderno vai além de códigos; trata-se de criar experiências, acessibilidade e interfaces responsivas. Este projeto comprova que a união de metodologias ágeis com o desenvolvimento web resulta em soluções reais e prontas para o mercado de tecnologia.
                 </p>
             </div>
 
             <div class="titulo-centralizado" style="margin-top: 60px;">
-                <h2>Nossa Jornada na UTFPR</h2>
-                <p>Evolução ao longo de 4 semestres no curso de Análise e Desenvolvimento de Sistemas.</p>
+                <h2>A Jornada até Aqui</h2>
+                <p>Nossa evolução ao longo de 4 semestres no curso de Análise e Desenvolvimento de Sistemas.</p>
             </div>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>1º Semestre: Fundamentos</h3>
-                        <p>Lógica de Programação, Arquitetura de Computadores e IHC. A base para entender como resolver problemas de forma algorítmica.</p>
+                        <h3>1º Semestre: A Base</h3>
+                        <p>Lógica de Programação, Arquitetura de Computadores, Design de Interação (IHC) e Matemática. A fundação de como os computadores operam e como pensar soluções.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2º Semestre: Estruturação</h3>
-                        <p>Programação Orientada a Objetos, Banco de Dados e Sistemas Operacionais. Aprendendo a organizar dados e sistemas complexos.</p>
+                        <h3>2º Semestre: Dados e Sistemas</h3>
+                        <p>Programação Orientada a Objetos, Banco de Dados, Estrutura de Dados e Sistemas Operacionais. Criando sistemas mais robustos e armazenando informações.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>3º Semestre: Desenvolvimento Web</h3>
-                        <p>Desenvolvimento Web, Redes e Gestão de Projetos Ágeis. O primeiro contato com a criação de sistemas para internet.</p>
+                        <h3>3º Semestre: Web e Gestão</h3>
+                        <p>Desenvolvimento Web, Modelagem, Redes e Gestão de Projetos de TI (com foco em Desenvolvimento Ágil). O salto para a internet e trabalho em equipe.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>4º Semestre: Integração (Atual)</h3>
-                        <p>Desenvolvimento Front-End e Certificadora de Competência. Aplicação prática de todo o conhecimento para criar este REA.</p>
+                        <h3>4º Semestre: Aplicação (Atual)</h3>
+                        <p>Desenvolvimento Web Front-End e Certificadora de Competência Comum. A união de tudo aprendido para a criação deste Recurso Educacional Aberto (REA).</p>
                     </div>
                 </div>
             </div>
@@ -132,22 +132,22 @@
                 <div class="equipe-grid">
                     <div class="integrante">
                         <img src="foto-paulo.png" alt="Paulo" class="foto-perfil">
-                        <p>Paulo Cesar Leite</p>
+                        <p>Paulo Leite</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
                         <img src="foto-higor.png" alt="Higor" class="foto-perfil">
-                        <p>Higor Claro da Silva</p>
+                        <p>Higor Silva</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
                         <img src="foto-carlos.png" alt="Carlos" class="foto-perfil">
-                        <p>Carlos Henrique de Andrade</p>
+                        <p>Carlos Andrade</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                     <div class="integrante">
                         <img src="foto-victor.png" alt="Victor" class="foto-perfil">
-                        <p>Victor Hugo C. Neves</p>
+                        <p>Victor Neves</p>
                         <a href="#" target="_blank">LinkedIn / GitHub</a>
                     </div>
                 </div>
