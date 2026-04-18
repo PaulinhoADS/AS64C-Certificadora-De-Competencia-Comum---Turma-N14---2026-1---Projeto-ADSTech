@@ -423,3 +423,25 @@ body {
     color: var(--cor-texto-mudo);
     font-size: 0.9rem;
 }
+
+/* --- RESPONSIVIDADE DO CABEÇALHO (Celulares e Tablets) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Empilha a logo em cima e os links embaixo */
+        padding: 15px 20px;
+        text-align: center;
+        gap: 15px; /* Cria um espaço entre a logo e o menu */
+    }
+
+    .nav-links {
+        flex-wrap: wrap; /* Permite que os links quebrem linha se o celular for muito pequeno */
+        justify-content: center;
+        gap: 15px; /* Reduz o espaçamento entre os links para caberem melhor */
+        width: 100%;
+    }
+
+    .logo {
+        justify-content: center; /* Centraliza a logo no topo */
+        width: 100%;
+    }
+}
