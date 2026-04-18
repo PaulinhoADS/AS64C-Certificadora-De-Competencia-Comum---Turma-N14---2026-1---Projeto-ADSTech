@@ -1,18 +1,39 @@
-/* --- VARIÁVEIS DE CORES --- */
+/* --- CONFIGURAÇÃO DE TEMAS (DARK MODE / LIGHT MODE) --- */
+/* Utilizamos as cores da logo ADSTech: Tons de Verde e Azul */
 :root {
-    --bg-principal: #121214;
-    --bg-secundario: #202024;
-    --cor-destaque: #00E676;
-    --cor-texto: #E1E1E6;
-    --cor-texto-mudo: #A8A8B3;
+    /* Cores universais da marca (não mudam com o tema) */
+    --cor-verde: #00E676; /* Verde vibrante tecnológico */
+    --cor-azul: #004A99;  /* Azul corporativo/educacional da logo */
 }
 
-/* --- RESET E FONTES --- */
+/* Tema Escuro (Padrão) */
+[data-theme="dark"] {
+    --bg-principal: #121214; /* Fundo mais escuro */
+    --bg-secundario: #202024; /* Fundo de cards e seções destacadas */
+    --cor-texto: #E1E1E6; /* Branco acinzentado suave para leitura */
+    --cor-texto-mudo: #A8A8B3; /* Cinza para textos secundários */
+    --cor-borda: #29292e; /* Linhas de separação */
+    --cor-destaque-titulos: var(--cor-verde); /* Títulos no dark mode ficam verdes */
+}
+
+/* Tema Claro */
+[data-theme="light"] {
+    --bg-principal: #F4F5F7; /* Fundo cinza bem claro */
+    --bg-secundario: #FFFFFF; /* Fundo branco puro para cards */
+    --cor-texto: #121214; /* Preto suave para textos principais */
+    --cor-texto-mudo: #4A4A4A; /* Cinza escuro para textos de apoio */
+    --cor-borda: #DCE2E6; /* Linhas cinzas claras */
+    --cor-destaque-titulos: var(--cor-azul); /* Títulos no light mode ficam azuis para contraste */
+}
+
+/* --- RESET BÁSICO E TRANSIÇÕES --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* Transição suave em todos os elementos quando o usuário trocar o tema */
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 body {
@@ -21,14 +42,14 @@ body {
     line-height: 1.6;
 }
 
-/* --- CABEÇALHO --- */
+/* --- CABEÇALHO / NAVEGAÇÃO --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     background-color: var(--bg-secundario);
-    border-bottom: 2px solid #29292e;
+    border-bottom: 2px solid var(--cor-borda);
 }
 
 .logo {
@@ -37,19 +58,20 @@ body {
     gap: 15px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--cor-destaque);
+    color: var(--cor-azul); /* O nome da logo sempre em azul */
 }
 
 .img-logo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 5px;
-    background-color: #333; 
+    background-color: transparent; 
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -57,23 +79,41 @@ body {
     color: var(--cor-texto);
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--cor-destaque);
+    color: var(--cor-verde);
 }
 
-/* --- CONTROLE DE SEÇÕES --- */
+/* Botão de Tema */
+.btn-theme {
+    background-color: var(--cor-azul);
+    color: #FFF;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-theme:hover {
+    background-color: #003673;
+    transform: scale(1.05);
+}
+
+/* --- CONTROLE DE SEÇÕES (SPA) --- */
 .secao {
-    display: none;
+    display: none; /* Esconde tudo por padrão */
     padding: 60px 5%;
     min-height: 70vh;
     animation: fadeIn 0.4s ease-in-out;
 }
 
 .ativa {
-    display: block;
+    display: block; /* Mostra a seção ativa */
 }
 
 .oculta {
@@ -85,13 +125,13 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- SEÇÃO HOME --- */
+/* --- SEÇÃO HOME (HERO) --- */
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Permite que quebre linha em celulares */
 }
 
 .hero-texto {
@@ -105,7 +145,7 @@ body {
 }
 
 .hero-texto h1 span {
-    color: var(--cor-destaque);
+    color: var(--cor-destaque-titulos);
 }
 
 .texto-didatico {
@@ -115,15 +155,14 @@ body {
 }
 
 .btn-destaque {
-    background-color: var(--cor-destaque);
-    color: #000;
+    background-color: var(--cor-verde);
+    color: #000; /* Texto preto para dar contraste no botão verde */
     padding: 15px 35px;
     font-size: 1.1rem;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .btn-destaque:hover {
@@ -141,13 +180,13 @@ body {
 .hero-imagem img {
     max-width: 100%;
     border-radius: 10px;
-    background-color: #333;
+    background-color: var(--cor-borda);
     min-height: 300px;
     width: 100%;
     object-fit: cover;
 }
 
-/* --- MÓDULOS --- */
+/* --- MÓDULOS (TRILHA DE CONHECIMENTO) --- */
 .titulo-centralizado {
     text-align: center;
     margin-bottom: 50px;
@@ -155,7 +194,7 @@ body {
 
 .titulo-centralizado h2 {
     font-size: 2.5rem;
-    color: var(--cor-destaque);
+    color: var(--cor-destaque-titulos);
 }
 
 .grid-cards {
@@ -170,12 +209,11 @@ body {
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    border: 1px solid transparent;
-    transition: 0.3s;
+    border: 1px solid var(--cor-borda);
 }
 
 .card:hover {
-    border-color: var(--cor-destaque);
+    border-color: var(--cor-verde);
     transform: translateY(-10px);
 }
 
@@ -183,52 +221,78 @@ body {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
-    background-color: #444; 
+    background-color: var(--cor-borda); 
     border-radius: 10px;
 }
 
-/* --- SALA DE AULA --- */
+/* --- SALA DE AULA (AULAS E VÍDEOS) --- */
 .btn-voltar {
     background: none;
-    color: var(--cor-destaque);
-    border: 1px solid var(--cor-destaque);
+    color: var(--cor-destaque-titulos);
+    border: 1px solid var(--cor-destaque-titulos);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 30px;
     font-size: 1rem;
-    transition: 0.3s;
 }
 
 .btn-voltar:hover {
-    background-color: var(--cor-destaque);
-    color: #000;
+    background-color: var(--cor-destaque-titulos);
+    color: var(--bg-principal);
 }
 
 .aula-container {
-    background-color: var(--bg-secundario);
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 900px;
+    background-color: var(--bg-principal); /* Removido o card em volta para dar espaço aos vídeos */
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .aula-container h2 {
-    color: var(--cor-destaque);
-    margin-bottom: 20px;
+    color: var(--cor-destaque-titulos);
+    margin-bottom: 10px;
+    font-size: 2.2rem;
 }
 
-.texto-aula {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+/* Novo estilo para o texto didático superior (Antigo tijolos/maquiagem) */
+.intro-aula {
+    font-size: 1.15rem;
     color: var(--cor-texto-mudo);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--bg-secundario);
+    border-left: 5px solid var(--cor-verde);
+    border-radius: 5px;
 }
 
+/* Grid para organizar os 3 vídeos lado a lado (ou um embaixo do outro no celular) */
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.video-box {
+    background-color: var(--bg-secundario);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    display: flex;
+    flex-direction: column;
+}
+
+.video-box h3 {
+    color: var(--cor-azul);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* iframe do youtube sempre responsivo 16:9 */
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; 
     height: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .video-wrapper iframe {
@@ -237,21 +301,27 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
 }
 
-/* --- PÁGINA SOBRE: RESUMO E TIMELINE --- */
+.texto-educativo {
+    font-size: 0.95rem;
+    color: var(--cor-texto-mudo);
+    flex-grow: 1; /* Empurra o texto para organizar visualmente */
+}
+
+/* --- PÁGINA SOBRE: RESUMO DO CURSO E TIMELINE --- */
 .resumo-curso {
     background-color: var(--bg-secundario);
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 40px;
-    border-left: 5px solid var(--cor-destaque);
+    border-left: 5px solid var(--cor-destaque-titulos);
 }
 
 .resumo-curso h2 {
-    color: var(--cor-destaque);
+    color: var(--cor-destaque-titulos);
     margin-bottom: 20px;
 }
 
@@ -261,11 +331,12 @@ body {
     margin-bottom: 15px;
 }
 
+/* Linha do tempo completa preservada */
 .timeline {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
-    border-left: 3px solid var(--cor-destaque);
+    border-left: 3px solid var(--cor-verde);
     padding-left: 30px;
 }
 
@@ -281,26 +352,27 @@ body {
     width: 15px;
     height: 15px;
     background-color: var(--bg-principal);
-    border: 3px solid var(--cor-destaque);
+    border: 3px solid var(--cor-verde);
     border-radius: 50%;
 }
 
 .timeline-content h3 {
-    color: var(--cor-destaque);
+    color: var(--cor-azul); /* Destaque azul para os semestres */
     margin-bottom: 10px;
 }
 
-/* --- PÁGINA SOBRE: EQUIPE --- */
+/* --- PÁGINA SOBRE: EQUIPE DE DESENVOLVEDORES --- */
 .equipe-container {
     margin-top: 80px;
     text-align: center;
     background-color: var(--bg-secundario);
     padding: 40px;
     border-radius: 10px;
+    border: 1px solid var(--cor-borda);
 }
 
 .equipe-container h3 {
-    color: var(--cor-destaque);
+    color: var(--cor-destaque-titulos);
     font-size: 1.8rem;
     margin-bottom: 5px;
 }
@@ -324,8 +396,8 @@ body {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 3px solid var(--cor-destaque);
-    background-color: #444; 
+    border: 3px solid var(--cor-verde);
+    background-color: var(--cor-borda); 
     object-fit: cover;
 }
 
@@ -336,15 +408,16 @@ body {
 }
 
 .integrante a:hover {
-    color: var(--cor-destaque);
+    color: var(--cor-azul);
+    text-decoration: underline;
 }
 
 /* --- RODAPÉ GLOBAL MINIMALISTA --- */
 .rodape-global {
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #29292e;
+    border-top: 1px solid var(--cor-borda);
     margin-top: 40px;
-    color: #666;
+    color: var(--cor-texto-mudo);
     font-size: 0.9rem;
 }
