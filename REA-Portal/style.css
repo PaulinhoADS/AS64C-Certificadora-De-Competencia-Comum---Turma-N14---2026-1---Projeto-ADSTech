@@ -55,16 +55,16 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 60px;
-    font-size: 6rem;
+    gap: 30px;
+    font-size: 3rem;
     font-weight: bold;
-    color: var(--cor-azul); /* O nome da logo sempre em azul */
+    color: var(--cor-azul);
 }
 
 .img-logo {
-    width: 45px;
-    height: 45px;
-    border-radius: 5px;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
     background-color: transparent; 
 }
 
