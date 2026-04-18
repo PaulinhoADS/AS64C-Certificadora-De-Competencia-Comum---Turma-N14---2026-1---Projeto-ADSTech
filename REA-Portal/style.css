@@ -1,29 +1,28 @@
-/* --- CONFIGURAÇÃO DE TEMAS (DARK MODE / LIGHT MODE) --- */
-/* Utilizamos as cores da logo ADSTech: Tons de Verde e Azul */
+/* --- DEFINIÇÃO DE CORES E TEMAS (Baseado na Logomarca) --- */
 :root {
-    /* Cores universais da marca (não mudam com o tema) */
-    --cor-verde: #00E676; /* Verde vibrante tecnológico */
-    --cor-azul: #004A99;  /* Azul corporativo/educacional da logo */
+    /* Cores principais da ADSTech */
+    --cor-verde-logo: #00E676; 
+    --cor-azul-logo: #004A99;
 }
 
-/* Tema Escuro (Padrão) */
+/* TEMA ESCURO (Dark Mode) */
 [data-theme="dark"] {
-    --bg-principal: #121214; /* Fundo mais escuro */
-    --bg-secundario: #202024; /* Fundo de cards e seções destacadas */
-    --cor-texto: #E1E1E6; /* Branco acinzentado suave para leitura */
-    --cor-texto-mudo: #A8A8B3; /* Cinza para textos secundários */
-    --cor-borda: #29292e; /* Linhas de separação */
-    --cor-destaque-titulos: var(--cor-verde); /* Títulos no dark mode ficam verdes */
+    --bg-principal: #121214;
+    --bg-secundario: #1E1E22;
+    --cor-texto: #E1E1E6;
+    --cor-texto-mudo: #A8A8B3;
+    --cor-borda: #29292E;
+    --cor-destaque: var(--cor-verde-logo);
 }
 
-/* Tema Claro */
+/* TEMA CLARO (Light Mode) */
 [data-theme="light"] {
-    --bg-principal: #F4F5F7; /* Fundo cinza bem claro */
-    --bg-secundario: #FFFFFF; /* Fundo branco puro para cards */
-    --cor-texto: #121214; /* Preto suave para textos principais */
-    --cor-texto-mudo: #4A4A4A; /* Cinza escuro para textos de apoio */
-    --cor-borda: #DCE2E6; /* Linhas cinzas claras */
-    --cor-destaque-titulos: var(--cor-azul); /* Títulos no light mode ficam azuis para contraste */
+    --bg-principal: #F0F2F5;
+    --bg-secundario: #FFFFFF;
+    --cor-texto: #121214;
+    --cor-texto-mudo: #5A5A66;
+    --cor-borda: #DCE2E6;
+    --cor-destaque: var(--cor-azul-logo); /* No modo claro, usamos o azul como destaque principal */
 }
 
 /* --- RESET BÁSICO E TRANSIÇÕES --- */
@@ -32,7 +31,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    /* Transição suave em todos os elementos quando o usuário trocar o tema */
+    /* Transição suave para quando o usuário trocar o tema */
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
@@ -42,78 +41,81 @@ body {
     line-height: 1.6;
 }
 
-/* --- CABEÇALHO / NAVEGAÇÃO --- */
+/* --- CABEÇALHO --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     background-color: var(--bg-secundario);
     border-bottom: 2px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 1.5rem;
+    gap: 12px;
+    font-size: 1.4rem;
     font-weight: bold;
-    color: var(--cor-azul); /* O nome da logo sempre em azul */
+    color: var(--cor-azul-logo);
 }
 
 .img-logo {
-    width: 45px;
-    height: 45px;
-    border-radius: 5px;
-    background-color: transparent; 
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .nav-links a {
     color: var(--cor-texto);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
-    color: var(--cor-verde);
+    color: var(--cor-verde-logo);
 }
 
-/* Botão de Tema */
+/* Botão Alternar Tema */
 .btn-theme {
-    background-color: var(--cor-azul);
-    color: #FFF;
+    background-color: var(--cor-azul-logo);
+    color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .btn-theme:hover {
-    background-color: #003673;
+    background-color: #003a7a;
     transform: scale(1.05);
 }
 
-/* --- CONTROLE DE SEÇÕES (SPA) --- */
+/* --- NAVEGAÇÃO SPA (SEÇÕES) --- */
 .secao {
-    display: none; /* Esconde tudo por padrão */
+    display: none;
     padding: 60px 5%;
-    min-height: 70vh;
+    min-height: 80vh;
     animation: fadeIn 0.4s ease-in-out;
 }
 
 .ativa {
-    display: block; /* Mostra a seção ativa */
+    display: block;
 }
 
 .oculta {
@@ -121,80 +123,74 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- SEÇÃO HOME (HERO) --- */
+/* --- PÁGINA INICIAL (HERO) --- */
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap; /* Permite que quebre linha em celulares */
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .hero-texto {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
 }
 
 .hero-texto h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
 }
 
 .hero-texto h1 span {
-    color: var(--cor-destaque-titulos);
+    color: var(--cor-destaque);
 }
 
 .texto-didatico {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--cor-texto-mudo);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .btn-destaque {
-    background-color: var(--cor-verde);
-    color: #000; /* Texto preto para dar contraste no botão verde */
-    padding: 15px 35px;
-    font-size: 1.1rem;
+    background-color: var(--cor-verde-logo);
+    color: #000;
+    padding: 18px 40px;
+    font-size: 1.15rem;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .btn-destaque:hover {
-    background-color: #00c766;
-    transform: scale(1.05);
+    filter: brightness(1.1);
+    transform: translateY(-3px);
 }
 
 .hero-imagem {
     flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
+    min-width: 320px;
 }
 
 .hero-imagem img {
     max-width: 100%;
-    border-radius: 10px;
-    background-color: var(--cor-borda);
-    min-height: 300px;
-    width: 100%;
-    object-fit: cover;
+    border-radius: 15px;
 }
 
-/* --- MÓDULOS (TRILHA DE CONHECIMENTO) --- */
+/* --- CARDS DOS MÓDULOS --- */
 .titulo-centralizado {
     text-align: center;
     margin-bottom: 50px;
 }
 
 .titulo-centralizado h2 {
-    font-size: 2.5rem;
-    color: var(--cor-destaque-titulos);
+    font-size: 2.8rem;
+    color: var(--cor-destaque);
 }
 
 .grid-cards {
@@ -205,94 +201,88 @@ body {
 
 .card {
     background-color: var(--bg-secundario);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 35px;
+    border-radius: 15px;
     text-align: center;
     cursor: pointer;
     border: 1px solid var(--cor-borda);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card:hover {
-    border-color: var(--cor-verde);
+    border-color: var(--cor-verde-logo);
     transform: translateY(-10px);
 }
 
 .card-img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-    background-color: var(--cor-borda); 
-    border-radius: 10px;
+    width: 90px;
+    margin-bottom: 25px;
 }
 
-/* --- SALA DE AULA (AULAS E VÍDEOS) --- */
+/* --- SALA DE AULA (VÍDEOS E TEXTOS) --- */
 .btn-voltar {
     background: none;
-    color: var(--cor-destaque-titulos);
-    border: 1px solid var(--cor-destaque-titulos);
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: var(--cor-destaque);
+    border: 2px solid var(--cor-destaque);
+    padding: 10px 25px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 30px;
-    font-size: 1rem;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .btn-voltar:hover {
-    background-color: var(--cor-destaque-titulos);
+    background-color: var(--cor-destaque);
     color: var(--bg-principal);
 }
 
 .aula-container {
-    background-color: var(--bg-principal); /* Removido o card em volta para dar espaço aos vídeos */
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.aula-container h2 {
-    color: var(--cor-destaque-titulos);
-    margin-bottom: 10px;
-    font-size: 2.2rem;
-}
-
-/* Novo estilo para o texto didático superior (Antigo tijolos/maquiagem) */
-.intro-aula {
-    font-size: 1.15rem;
-    color: var(--cor-texto-mudo);
-    margin-bottom: 40px;
-    padding: 20px;
+/* Texto conceitual no topo da página da aula */
+.intro-aula-box {
     background-color: var(--bg-secundario);
-    border-left: 5px solid var(--cor-verde);
-    border-radius: 5px;
+    padding: 35px;
+    border-radius: 15px;
+    border-left: 8px solid var(--cor-verde-logo);
+    margin-bottom: 60px; /* Grande espaçamento para os vídeos */
 }
 
-/* Grid para organizar os 3 vídeos lado a lado (ou um embaixo do outro no celular) */
+.intro-aula-box h2 {
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+}
+
+/* GRID PARA OS 3 VÍDEOS POR MÓDULO */
 .grid-videos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px; /* Melhor espaçamento entre os boxes de vídeo */
 }
 
-.video-box {
+.video-card-aula {
     background-color: var(--bg-secundario);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 15px;
     border: 1px solid var(--cor-borda);
     display: flex;
     flex-direction: column;
 }
 
-.video-box h3 {
-    color: var(--cor-azul);
-    margin-bottom: 15px;
-    font-size: 1.3rem;
+.video-card-aula h3 {
+    margin-bottom: 20px;
+    color: var(--cor-azul-logo);
 }
 
-/* iframe do youtube sempre responsivo 16:9 */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 do YouTube */
     height: 0;
     margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .video-wrapper iframe {
@@ -301,123 +291,82 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
     border: none;
 }
 
-.texto-educativo {
-    font-size: 0.95rem;
+.texto-educativo-video {
+    font-size: 1rem;
     color: var(--cor-texto-mudo);
-    flex-grow: 1; /* Empurra o texto para organizar visualmente */
+    line-height: 1.5;
 }
 
-/* --- PÁGINA SOBRE: RESUMO DO CURSO E TIMELINE --- */
+/* --- PÁGINA SOBRE: TIMELINE E EQUIPE --- */
 .resumo-curso {
     background-color: var(--bg-secundario);
     padding: 40px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    border-left: 5px solid var(--cor-destaque-titulos);
+    border-radius: 15px;
+    border-left: 8px solid var(--cor-azul-logo);
+    margin-bottom: 50px;
 }
 
-.resumo-curso h2 {
-    color: var(--cor-destaque-titulos);
-    margin-bottom: 20px;
-}
-
-.resumo-curso p {
-    font-size: 1.1rem;
-    color: var(--cor-texto);
-    margin-bottom: 15px;
-}
-
-/* Linha do tempo completa preservada */
 .timeline {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    border-left: 3px solid var(--cor-verde);
-    padding-left: 30px;
+    max-width: 850px;
+    margin: 40px auto;
+    border-left: 4px solid var(--cor-verde-logo);
+    padding-left: 40px;
 }
 
 .timeline-item {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
 
 .timeline-dot {
     position: absolute;
-    left: -39px; 
+    left: -52px;
     top: 5px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: var(--bg-principal);
-    border: 3px solid var(--cor-verde);
+    border: 4px solid var(--cor-verde-logo);
     border-radius: 50%;
 }
 
 .timeline-content h3 {
-    color: var(--cor-azul); /* Destaque azul para os semestres */
+    color: var(--cor-azul-logo);
     margin-bottom: 10px;
 }
 
-/* --- PÁGINA SOBRE: EQUIPE DE DESENVOLVEDORES --- */
 .equipe-container {
-    margin-top: 80px;
-    text-align: center;
+    margin-top: 100px;
+    padding: 60px 40px;
     background-color: var(--bg-secundario);
-    padding: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--cor-borda);
-}
-
-.equipe-container h3 {
-    color: var(--cor-destaque-titulos);
-    font-size: 1.8rem;
-    margin-bottom: 5px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .equipe-grid {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 45px;
     flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.integrante {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    margin-top: 40px;
 }
 
 .foto-perfil {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 3px solid var(--cor-verde);
-    background-color: var(--cor-borda); 
+    border: 3px solid var(--cor-verde-logo);
+    margin-bottom: 15px;
     object-fit: cover;
 }
 
-.integrante a {
-    color: var(--cor-texto-mudo);
-    font-size: 0.9rem;
-    text-decoration: none;
-}
-
-.integrante a:hover {
-    color: var(--cor-azul);
-    text-decoration: underline;
-}
-
-/* --- RODAPÉ GLOBAL MINIMALISTA --- */
+/* --- RODAPÉ --- */
 .rodape-global {
+    padding: 30px;
     text-align: center;
-    padding: 20px;
     border-top: 1px solid var(--cor-borda);
-    margin-top: 40px;
     color: var(--cor-texto-mudo);
-    font-size: 0.9rem;
+    margin-top: 50px;
 }
