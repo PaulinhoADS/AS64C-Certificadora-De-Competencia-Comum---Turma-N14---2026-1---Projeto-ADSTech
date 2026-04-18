@@ -32,3 +32,10 @@ Implementamos um sistema de carregamento dinâmico de vídeos utilizando a API d
 
 ## 5. Fluxo de Funcionamento
 O usuário inicia na **Hero Section**, onde é apresentado ao conceito de Front-End. Ao avançar para os **Módulos**, o JavaScript gerencia a troca de conteúdo na "Sala de Aula", buscando informações em um objeto de dados local (`baseDeAulas`). Por fim, na seção **Sobre**, o usuário compreende a trajetória acadêmica da equipe e os objetivos extensionistas do projeto ADSTech no contexto da universidade.
+
+## 6. Implementações Recentes
+* **Sistema de Temas Dinâmico:** Implementação de Dark/Light mode utilizando atributos de dados e variáveis CSS baseadas na paleta da logo ADSTech (Verde #00E676 e Azul #004A99).
+* **Estrutura Modular de Vídeos:** Expansão para 9 vídeos tutoriais. Cada tecnologia (HTML, CSS, JS) possui agora 3 aulas focadas em partes específicas do e-commerce: Vitrine, Formulário e Carrinho.
+* **Hierarquia de Informação:** O texto conceitual educativo foi movido para o topo dos módulos para contextualizar o aprendizado antes da prática.
+* **JavaScript:** Manipulação de temas e renderização dinâmica de múltiplos vídeos.
+* **CSS Grid:** Utilizado para organizar a nova grade tripla de vídeos de forma responsiva.
