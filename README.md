@@ -68,7 +68,7 @@ Conforme os requisitos da disciplina, o REA será organizado em módulos temáti
 | **Sprint 5: Produção e Testes** <br> (Gravação no YouTube e Revisão de Código) | 11/05/2026 | 20/05/2026 | Todos os membros |
 | **Sprint 6: Documentação e Entrega Final** <br> (README, Refinamento e Upload) | 21/05/2026 | 02/06/2026 | Todos os membros |
 
-# Planejamento de Horas
+## Planejamento de Horas
 
 Carga horária total prevista para cada integrante: **120 horas**.
 
@@ -111,7 +111,7 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 <br><br>
 
-## Link para acesso ao Portal REA (EM CONSTRUÇÃO) que HOSPEDARÁ as vídeo-aulas e os materiais didáticos do projeto ADSTech. A interface ESTÁ SENDO projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
+#### Link para acesso ao Portal REA (EM CONSTRUÇÃO) que HOSPEDARÁ as vídeo-aulas e os materiais didáticos do projeto ADSTech. A interface ESTÁ SENDO projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
 
 <a href="https://paulinhoads.github.io/AS64C-Certificadora-De-Competencia-Comum---Turma-N14---2026-1---Projeto-ADSTech/REA-Portal/" target="_blank" rel="noopener noreferrer">Portal-REA</a>
 
