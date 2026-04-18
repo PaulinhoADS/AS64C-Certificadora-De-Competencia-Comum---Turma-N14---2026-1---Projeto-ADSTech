@@ -54,17 +54,17 @@ const baseDeAulas = {
         aulas: [
             {
                 titulo: "Vídeo 1: HTML da Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Trocar pelo link real depois
+                url: "https://www.youtube.com/embed/wcW8SvbnJYE", // Trocar pelo link real depois
                 desc: "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços."
             },
             {
                 titulo: "Vídeo 2: HTML do Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/ZnZqB5Z75zI",
                 desc: "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce."
             },
             {
                 titulo: "Vídeo 3: HTML do Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/HX43QiFApWc",
                 desc: "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra."
             }
         ]
@@ -75,17 +75,17 @@ const baseDeAulas = {
         aulas: [
             {
                 titulo: "Vídeo 1: Estilizando a Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/UyqnRW",
                 desc: "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid."
             },
             {
                 titulo: "Vídeo 2: Estilizando o Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/U2zHz5EkG",
                 desc: "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio."
             },
             {
                 titulo: "Vídeo 3: Estilizando o Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/9arUOL3N6Co",
                 desc: "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra."
             }
         ]
@@ -96,17 +96,17 @@ const baseDeAulas = {
         aulas: [
             {
                 titulo: "Vídeo 1: Interação na Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/FM7MFYoylVs",
                 desc: "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela."
             },
             {
                 titulo: "Vídeo 2: Validação do Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/gKM15TaKLUI",
                 desc: "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar."
             },
             {
                 titulo: "Vídeo 3: Lógica do Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                url: "https://www.youtube.com/embed/VPRjCeoBqrI",
                 desc: "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente."
             }
         ]
