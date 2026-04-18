@@ -23,7 +23,7 @@
         <div class="form-container">
             <h1>Cadastrar Novo Produto</h1>
 
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form onsubmit="salvarProduto(event)" id="form-produto">
                 <div class="input-group">
                     <label for="nome">Nome do Produto</label>
                     <input type="text" id="nome" name="nome" required>
