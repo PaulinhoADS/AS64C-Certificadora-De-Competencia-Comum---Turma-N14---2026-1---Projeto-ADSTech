@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Meu e-Commerce</div>
+        <nav>
+            <ul>
+                <li><a href="../vitrine/">Vitrine</a></li>
+                <li><a href="#">Cadastrar Produto</a></li>
+                <li><a href="../carrinho/">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Cadastrar Novo Produto</h1>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="nome">Nome do Produto</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" name="preco" step="0.01" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="foto">URL da Imagem</label>
+                    <input type="url" id="foto" name="foto" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Salvar Produto</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu e-Commerce. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
