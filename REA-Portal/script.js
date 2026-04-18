@@ -1,155 +1,155 @@
 /**
- * LÓGICA DE TEMAS (DARK MODE / LIGHT MODE)
- * Esta função captura o clique no botão do cabeçalho e alterna a variável no HTML.
- * O CSS faz o resto do trabalho alterando as cores das variáveis.
+ * LÓGICA DE ALTERNÂNCIA DE TEMA (DARK / LIGHT MODE)
+ * Selecionamos o botão por ID e alteramos o atributo do body.
  */
-const themeToggleBtn = document.getElementById('theme-toggle');
-const bodyElement = document.body;
+const btnTema = document.getElementById('btn-alternar-tema');
+const body = document.body;
 
-themeToggleBtn.addEventListener('click', () => {
-    // Verifica qual é o tema atual lendo o atributo do HTML
-    const temaAtual = bodyElement.getAttribute('data-theme');
+btnTema.addEventListener('click', () => {
+    // Busca o tema que está ativo no momento
+    const temaAtual = body.getAttribute('data-theme');
     
-    // Se for dark, muda pra light. Se for light, muda pra dark.
+    // Altera o tema e atualiza os textos visuais do botão
     if (temaAtual === 'dark') {
-        bodyElement.setAttribute('data-theme', 'light');
+        body.setAttribute('data-theme', 'light');
+        document.getElementById('tema-icone').innerText = '☀️';
+        document.getElementById('tema-texto').innerText = 'Modo Claro';
     } else {
-        bodyElement.setAttribute('data-theme', 'dark');
+        body.setAttribute('data-theme', 'dark');
+        document.getElementById('tema-icone').innerText = '🌙';
+        document.getElementById('tema-texto').innerText = 'Modo Escuro';
     }
 });
 
 /**
  * LÓGICA DE NAVEGAÇÃO SPA (Single Page Application)
- * Esta função recebe o ID da seção que queremos mostrar,
- * oculta todas as outras e exibe apenas a escolhida.
+ * Alterna a visibilidade das seções sem precisar recarregar a página.
  */
 function mostrarSecao(idSecao) {
-    // Pega todas as tags que têm a classe "secao"
     const secoes = document.querySelectorAll('.secao');
     
-    // Varre a lista de seções e esconde todas
-    secoes.forEach(secao => {
-        secao.classList.remove('ativa');
-        secao.classList.add('oculta');
+    // Esconde todas as seções
+    secoes.forEach(s => {
+        s.classList.remove('ativa');
+        s.classList.add('oculta');
     });
-    
-    // Encontra a seção exata que o usuário clicou e a mostra na tela
-    const secaoDesejada = document.getElementById(idSecao);
-    secaoDesejada.classList.remove('oculta');
-    secaoDesejada.classList.add('ativa');
-    
-    // Rola a página para o topo suavemente para melhorar a experiência
+
+    // Mostra a seção desejada
+    const alvo = document.getElementById(idSecao);
+    alvo.classList.remove('oculta');
+    alvo.classList.add('ativa');
+
+    // Sempre rola a página para o topo ao trocar de tela
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /**
- * BANCO DE DADOS DOS MÓDULOS (Conteúdo Didático)
- * Aqui mantivemos seus textos clássicos (Tijolos, Maquiagem, Cérebro) na "intro"
- * E criamos a estrutura para os 3 VÍDEOS de cada módulo, com seus respectivos textos.
- * Lembre-se: os links da video-aula gravada no YouTube precisam ter o formato "/embed/ID_DO_VIDEO"
+ * BANCO DE DADOS DOS MÓDULOS REA
+ * Estrutura contendo a introdução didática e o conjunto de 3 vídeos por módulo.
  */
 const baseDeAulas = {
     'html': {
-        titulo: "Módulo 1: O Esqueleto (HTML)",
-        intro: `<strong>HTML (HyperText Markup Language):</strong> Imagine que você está construindo uma casa. O HTML são os tijolos, as paredes e as portas. Na web, ele é usado para estruturar o conteúdo. Abaixo, separamos a construção da nossa loja em 3 etapas fundamentais:`,
+        titulo: "Módulo 1: A Estrutura (HTML)",
+        intro: "O <strong>HTML</strong> é a base de tudo, o esqueleto e os 'tijolos' que dão forma ao seu site e-commerce. Sem ele, não teríamos onde colocar nossos produtos.",
         aulas: [
             {
-                titulo: "Vídeo 1: HTML da Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Trocar pelo link real depois
-                desc: "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços."
+                subtitulo: "Aula 1: HTML da Vitrine",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Exemplo: Substituir pelo link real
+                texto: "Nesta vídeo-aula, aprendemos a criar os blocos onde os produtos serão exibidos, definindo títulos e imagens."
             },
             {
-                titulo: "Vídeo 2: HTML do Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce."
+                subtitulo: "Aula 2: HTML do Formulário",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Entenda como estruturar campos de contato e cadastro de clientes para sua loja virtual."
             },
             {
-                titulo: "Vídeo 3: HTML do Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra."
+                subtitulo: "Aula 3: HTML do Carrinho",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Veja como organizar a lista de itens selecionados para a finalização da compra."
             }
         ]
     },
     'css': {
-        titulo: "Módulo 2: A Maquiagem (CSS)",
-        intro: `<strong>CSS (Cascading Style Sheets):</strong> Se o HTML é a parede de tijolos, o CSS é a tinta, o papel de parede e a decoração. Ele é totalmente responsável pelo visual! Vamos dar vida à nossa estrutura:`,
+        titulo: "Módulo 2: O Estilo (CSS)",
+        intro: "O <strong>CSS</strong> é a maquiagem e o design, responsável por deixar sua loja atraente, organizada e com aspecto profissional.",
         aulas: [
             {
-                titulo: "Vídeo 1: Estilizando a Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid."
+                subtitulo: "Aula 1: Estilizando a Vitrine",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Aplicando cores, sombras e alinhamentos para que seus produtos fiquem irresistíveis ao cliente."
             },
             {
-                titulo: "Vídeo 2: Estilizando o Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio."
+                subtitulo: "Aula 2: Estilizando o Formulário",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Aprenda a criar campos modernos e botões de envio chamativos e intuitivos."
             },
             {
-                titulo: "Vídeo 3: Estilizando o Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra."
+                subtitulo: "Aula 3: Estilizando o Carrinho",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Como deixar a visualização do total da compra clara e organizada para o usuário."
             }
         ]
     },
     'js': {
-        titulo: "Módulo 3: O Cérebro (JavaScript)",
-        intro: `<strong>JavaScript (JS):</strong> Nossa casa já está construída e pintada, mas as luzes não acendem sozinhas. O JavaScript é a energia e as engrenagens. No e-commerce, é ele quem faz a mágica acontecer:`,
+        titulo: "Módulo 3: A Interatividade (JavaScript)",
+        intro: "O <strong>JavaScript</strong> é o cérebro que processa as ações. É ele quem faz o carrinho somar os valores e validar os dados de compra.",
         aulas: [
             {
-                titulo: "Vídeo 1: Interação na Vitrine",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela."
+                subtitulo: "Aula 1: Lógica da Vitrine",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Programando a funcionalidade de clicar no produto e reconhecer a escolha do usuário."
             },
             {
-                titulo: "Vídeo 2: Validação do Formulário",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar."
+                subtitulo: "Aula 2: Validação de Dados",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "Garantindo que o cliente preencha as informações corretamente antes de fechar o pedido."
             },
             {
-                titulo: "Vídeo 3: Lógica do Carrinho",
-                url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                desc: "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente."
+                subtitulo: "Aula 3: Lógica do Carrinho",
+                videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                texto: "O vídeo mais importante: calculando valores totais e atualizando o carrinho em tempo real."
             }
         ]
     }
 };
 
 /**
- * FUNÇÃO PARA INJETAR O CONTEÚDO DINAMICAMENTE
- * Pega o texto da intro e constrói o grid com os 3 vídeos.
+ * FUNÇÃO DE GERAÇÃO DA SALA DE AULA
+ * Injeta o conteúdo didático e o grid de 3 vídeos dinamicamente.
  */
 function carregarAula(moduloEscolhido) {
-    const dados = baseDeAulas[moduloEscolhido];
-    const containerConteudo = document.getElementById('conteudo-aula');
+    const modulo = baseDeAulas[moduloEscolhido];
+    const container = document.getElementById('conteudo-aula');
 
-    // Variável para guardar o HTML gerado de todos os 3 vídeos do módulo
-    let htmlDosVideos = '';
+    // 1. Criamos primeiro o topo com a introdução educativa (Tijolos, Maquiagem, etc)
+    let layoutHtml = `
+        <div class="intro-aula-box">
+            <h2>${modulo.titulo}</h2>
+            <p>${modulo.intro}</p>
+        </div>
+        
+        <div class="grid-videos">
+    `;
 
-    // Um "Laço de Repetição" (loop) que passa por cada aula e gera o quadradinho do vídeo
-    dados.aulas.forEach(aula => {
-        htmlDosVideos += `
-            <div class="video-box">
-                <h3>${aula.titulo}</h3>
+    // 2. Criamos o loop para gerar os 3 blocos de vídeo do módulo
+    modulo.aulas.forEach(aula => {
+        layoutHtml += `
+            <div class="video-card-aula">
+                <h3>${aula.subtitulo}</h3>
                 <div class="video-wrapper">
-                    <iframe src="${aula.url}" title="${aula.titulo}" allowfullscreen></iframe>
+                    <iframe src="${aula.videoUrl}" title="${aula.subtitulo}" allowfullscreen></iframe>
                 </div>
-                <p class="texto-educativo">${aula.desc}</p>
+                <p class="texto-educativo-video">${aula.texto}</p>
             </div>
         `;
     });
 
-    // Injeta a Introdução principal em cima e os vídeos embaixo
-    containerConteudo.innerHTML = `
-        <h2>${dados.titulo}</h2>
-        <div class="intro-aula">
-            ${dados.intro}
-        </div>
-        
-        <div class="grid-videos">
-            ${htmlDosVideos}
-        </div>
-    `;
-    
-    // Muda a página para exibir a sala de aula
+    // Fechamos a div do grid
+    layoutHtml += `</div>`;
+
+    // 3. Injetamos o HTML final no portal
+    container.innerHTML = layoutHtml;
+
+    // 4. Exibimos a seção da sala de aula
     mostrarSecao('sala-aula');
 }
