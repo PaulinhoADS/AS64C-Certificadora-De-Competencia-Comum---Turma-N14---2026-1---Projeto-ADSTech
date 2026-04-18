@@ -75,12 +75,12 @@ const baseDeAulas = {
         aulas: [
             {
                 titulo: "Vídeo 1: Estilizando a Vitrine",
-                url: "https://www.youtube.com/embed/UyqnRW",
+                url: "https://www.youtube.com/embed/y83x7MgzWOA",
                 desc: "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid."
             },
             {
                 titulo: "Vídeo 2: Estilizando o Formulário",
-                url: "https://www.youtube.com/embed/U2zHz5EkG",
+                url: "https://www.youtube.com/embed/pXRviuL6vMY",
                 desc: "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio."
             },
             {
