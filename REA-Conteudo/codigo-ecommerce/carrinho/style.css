@@ -106,3 +106,29 @@
 .btn-finalizar:hover {
     background-color: #219653;
 }
+
+.carrinho-vazio {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #7f8c8d;
+}
+
+.carrinho-vazio p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #2980b9;
+}
