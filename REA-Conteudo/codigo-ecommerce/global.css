@@ -62,3 +62,7 @@ footer {
     padding: 1.5rem;
     margin-top: auto;
 }
+
+.oculto {
+    display: none !important;
+}
