@@ -40,7 +40,7 @@ const verificarCarrinhoVazio = () => {
 }
 
 const carregarCarrinho = (carrinho) => {
-    const produtos = obterCarrinhoDetalhado();
+    const produtos = obterCarrinhoDetalhado(carrinho);
 
     const itensCarrinho = document.querySelector('.itens-carrinho')
     const fragment = document.createDocumentFragment();
@@ -74,7 +74,7 @@ const carregarCarrinho = (carrinho) => {
     document.querySelector('.valor-total').textContent = `R$ ${valorTotal.toFixed(2)}`;
 }
 
-const obterCarrinhoDetalhado = () => {
+const obterCarrinhoDetalhado = (carrinho) => {
     const produtosTotal = JSON.parse(localStorage.getItem('produtos'));
     return carrinho.map(e => {
         const produto = produtosTotal[e.id_produto];
@@ -108,4 +108,18 @@ const alterarQuantidade = (id, quantidade) => {
         localStorage.setItem('carrinho',JSON.stringify(carrinho));
         verificarCarrinhoVazio();
     }
+}
+
+const finalizarCompra = () => {
+    const produtos = obterCarrinhoDetalhado(JSON.parse(localStorage.getItem('carrinho')));
+    let url = 'https://wa.me/5544999410088?text=Olá,%20fiz%20a%20compra%20dos%20seguintes%20itens:%0A';
+    let valorTotal = 0;
+    produtos.forEach((e) => {
+        url += `-%20${e.quantidade}x%20${e.nome}%20(R$%20${e.valor_total.toFixed(2)})%0A`;
+        valorTotal += e.valor_total;
+    });
+    url += `%0A*Total:%20R$%20${valorTotal.toFixed(2)}*`;
+    window.open(url, '_blank');
+    localStorage.setItem('carrinho','[]')
+    verificarCarrinhoVazio();
 }
