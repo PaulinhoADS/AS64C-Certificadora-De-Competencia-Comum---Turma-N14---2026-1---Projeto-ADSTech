@@ -19,7 +19,7 @@ const getId = () => {
 }
 
 const notificar = () => {
-    const toast = document.getElementById('toast');
+    const toast = document.querySelector('.toast');
     toast.classList.add('mostrar');
     setTimeout(() => {
         toast.classList.remove('mostrar');
