@@ -40,14 +40,7 @@ const verificarCarrinhoVazio = () => {
 }
 
 const carregarCarrinho = (carrinho) => {
-    const produtosTotal = JSON.parse(localStorage.getItem('produtos'));
-    const produtos = carrinho.map(e => {
-        const produto = produtosTotal[e.id_produto];
-        produto['quantidade'] = e.quantidade;
-        produto['preco'] = parseFloat(produto.preco);
-        produto['valor_total'] = e.quantidade * produto.preco;
-        return produto;
-    });
+    const produtos = obterCarrinhoDetalhado();
 
     const itensCarrinho = document.querySelector('.itens-carrinho')
     const fragment = document.createDocumentFragment();
@@ -79,6 +72,20 @@ const carregarCarrinho = (carrinho) => {
     });
     itensCarrinho.appendChild(fragment);
     document.querySelector('.valor-total').textContent = `R$ ${valorTotal.toFixed(2)}`;
+}
+
+const obterCarrinhoDetalhado = () => {
+    const produtosTotal = JSON.parse(localStorage.getItem('produtos'));
+    return carrinho.map(e => {
+        const produto = produtosTotal[e.id_produto];
+        const preco = parseFloat(produto.preco);
+        return {
+            ...produto,
+            quantidade: e.quantidade,
+            preco: preco,
+            valor_total: e.quantidade * produto.preco
+        };
+    });
 }
 
 const limparTela = () => {
