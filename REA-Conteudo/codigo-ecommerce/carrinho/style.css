@@ -24,16 +24,34 @@
 .item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #eee;
 }
 
 .item img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 8px;
+}
+
+.item-detalhes {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-detalhes h3 {
+    font-size: 1.1rem;
+    color: var(--cor-primaria);
+    margin: 0;
+}
+
+.preco-unitario {
+    color: #7f8c8d;
+    font-size: 0.95rem;
 }
 
 .item-info {
@@ -55,6 +73,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .qtd-input {
@@ -66,17 +85,27 @@
 }
 
 .btn-remover {
-    background-color: #e74c3c;
-    color: white;
+    background: none;
+    color: #e74c3c;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .btn-remover:hover {
-    background-color: #c0392b;
+    color: #c0392b;
+}
+
+.item-total {
+    text-align: right;
+    min-width: 120px;
+}
+
+.preco-subtotal {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
 }
 
 .resumo-carrinho {
