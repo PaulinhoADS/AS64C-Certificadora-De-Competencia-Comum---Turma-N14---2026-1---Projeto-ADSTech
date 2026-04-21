@@ -3,21 +3,15 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 });
 
 document.querySelector('.itens-carrinho').addEventListener('click',(e)=>{
-    if(e.target.className === 'btn-remover' || e.target.className === 'qtd-input'){
-        const id = e.target.parentElement.parentElement.parentElement.getAttribute('data-id');
-        if(e.target.className === 'btn-remover'){
-            removerProduto(id);
-        }
-    
-        if(e.target.className === 'qtd-input'){
-            alterarQuantidade(id, parseInt(e.target.value))
-        }
+    if(e.target.classList.contains('btn-remover')){
+        const id = e.target.closest('.item').getAttribute('data-id');
+        removerProduto(id);
     }
 });
 
 document.querySelector('.itens-carrinho').addEventListener('change',(e)=>{
-    if(e.target.className === 'qtd-input'){
-        const id = e.target.parentElement.parentElement.parentElement.getAttribute('data-id');
+    if(e.target.classList.contains('qtd-input')){
+        const id = e.target.closest('.item').getAttribute('data-id');
         alterarQuantidade(id,parseInt(e.target.value));
     }
 });
@@ -83,15 +77,14 @@ const obterCarrinhoDetalhado = (carrinho) => {
             ...produto,
             quantidade: e.quantidade,
             preco: preco,
-            valor_total: e.quantidade * produto.preco
+            valor_total: e.quantidade * preco
         };
     });
 }
 
 const limparTela = () => {
-    const itensCarrinho = document.querySelector('.itens-carrinho')
     const itens = document.querySelectorAll('.item');
-    itens.forEach((e)=>itensCarrinho.removeChild(e));
+    itens.forEach((e)=>e.remove());
 }
 
 const removerProduto = (id) => {
@@ -102,12 +95,9 @@ const removerProduto = (id) => {
 
 const alterarQuantidade = (id, quantidade) => {
     const carrinho = JSON.parse(localStorage.getItem('carrinho'));
-    const item = carrinho.find((e)=>e.id_produto==id);
-    if(item.quantidade!=quantidade){
-        carrinho.find((e)=>e.id_produto==id).quantidade = quantidade;
-        localStorage.setItem('carrinho',JSON.stringify(carrinho));
-        verificarCarrinhoVazio();
-    }
+    carrinho.find((e)=>e.id_produto==id).quantidade = quantidade;
+    localStorage.setItem('carrinho',JSON.stringify(carrinho));
+    verificarCarrinhoVazio();
 }
 
 const finalizarCompra = () => {
