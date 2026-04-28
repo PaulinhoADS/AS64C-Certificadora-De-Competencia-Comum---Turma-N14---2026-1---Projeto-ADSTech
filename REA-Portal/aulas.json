@@ -1,0 +1,82 @@
+{
+    "html": {
+        "titulo": "Módulo 1: O Esqueleto (HTML)",
+        "intro": "<strong>HTML (HyperText Markup Language):</strong> Imagine que você está construindo uma casa. O HTML são os tijolos, as paredes e as portas. Na web, ele é usado para estruturar o conteúdo. Abaixo, separamos a construção da nossa loja em 3 etapas fundamentais:",
+        "aulas": [
+            {
+                "titulo": "Vídeo 1: HTML da Vitrine",
+                "url": "https://www.youtube.com/embed/wcW8SvbnJYE",
+                "desc": "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços.",
+                "materiais": [
+                    { "tipo": "subtitulo", "conteudo": "Por que o HTML é importante?" },
+                    { "tipo": "paragrafo", "conteudo": "O HTML define a semântica da página..." },
+                    { "tipo": "lista",     "conteudo": ["Tag div", "Tag section", "Tag article"] },
+                    { "tipo": "paragrafo", "conteudo": "Sempre feche suas tags!" }
+                ],
+                "exercicios": [
+                    "Crie um arquivo index.html e monte a estrutura básica (html, head, body).",
+                    "Crie uma <div> com a classe 'produto' e adicione um <h3> com o nome de um produto fictício.",
+                    "Adicione uma tag <img> com uma imagem provisória e um <p> com o valor do produto."
+                ]
+            },
+            {
+                "titulo": "Vídeo 2: HTML do Formulário",
+                "url": "https://www.youtube.com/embed/ZnZqB5Z75zI",
+                "desc": "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce.",
+                "materiais": [
+                    "<h4>Por que o HTML é importante?</h4>",
+                    "<p>O HTML define a semântica da página...</p>",
+                    "<ul><li>Tag div</li><li>Tag section</li><li>Tag article</li></ul>",
+                    "<p>Sempre feche suas tags!</p>"
+                ]
+            },
+            {
+                "titulo": "Vídeo 3: HTML do Carrinho",
+                "url": "https://www.youtube.com/embed/HX43QiFApWc",
+                "desc": "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra."
+            }
+        ]
+    },
+    "css": {
+        "titulo": "Módulo 2: A Maquiagem (CSS)",
+        "intro": "<strong>CSS (Cascading Style Sheets):</strong> Se o HTML é a parede de tijolos, o CSS é a tinta, o papel de parede e a decoração. Ele é totalmente responsável pelo visual! Vamos dar vida à nossa estrutura:",
+        "aulas": [
+            {
+                "titulo": "Vídeo 1: Estilizando a Vitrine",
+                "url": "https://www.youtube.com/embed/y83x7MgzWOA",
+                "desc": "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid."
+            },
+            {
+                "titulo": "Vídeo 2: Estilizando o Formulário",
+                "url": "https://www.youtube.com/embed/pXRviuL6vMY",
+                "desc": "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio."
+            },
+            {
+                "titulo": "Vídeo 3: Estilizando o Carrinho",
+                "url": "https://www.youtube.com/embed/9arUOL3N6Co",
+                "desc": "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra."
+            }
+        ]
+    },
+    "js": {
+        "titulo": "Módulo 3: O Cérebro (JavaScript)",
+        "intro": "<strong>JavaScript (JS):</strong> Nossa casa já está construída e pintada, mas as luzes não acendem sozinhas. O JavaScript é a energia e as engrenagens. No e-commerce, é ele quem faz a mágica acontecer:",
+        "aulas": [
+            {
+                "titulo": "Vídeo 1: Interação na Vitrine",
+                "url": "https://www.youtube.com/embed/FM7MFYoylVs",
+                "desc": "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela."
+            },
+            {
+                "titulo": "Vídeo 2: Validação do Formulário",
+                "url": "https://www.youtube.com/embed/gKM15TaKLUI",
+                "desc": "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar."
+            },
+            {
+                "titulo": "Vídeo 3: Lógica do Carrinho",
+                "url": "https://www.youtube.com/embed/VPRjCeoBqrI",
+                "desc": "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente."
+            }
+        ]
+    }
+}
