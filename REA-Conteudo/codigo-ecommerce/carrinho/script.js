@@ -47,7 +47,7 @@ const carregarCarrinho = (carrinho) => {
 
             <div class="item-detalhes"">
                 <h3>${e.nome}</h3>
-                <p class="preco-unitario">R$ ${e.preco.toFixed(2)}</p>
+                <p class="preco-unitario">${formatarPreco(e.preco)}</p>
 
                 <div class="item-acoes">
                     <input type="number" value="${e.quantidade}" min="1" class="qtd-input">
@@ -56,7 +56,7 @@ const carregarCarrinho = (carrinho) => {
              </div>
 
             <div class="item-total">
-                <p class="preco-subtotal">R$ ${e.valor_total.toFixed(2)}</p>
+                <p class="preco-subtotal">${formatarPreco(e.valor_total)}</p>
              </div>
         `;
         item.innerHTML=string;
@@ -65,7 +65,7 @@ const carregarCarrinho = (carrinho) => {
         valorTotal += e.valor_total;
     });
     itensCarrinho.appendChild(fragment);
-    document.querySelector('.valor-total').textContent = `R$ ${valorTotal.toFixed(2)}`;
+    document.querySelector('.valor-total').textContent = `${formatarPreco(valorTotal)}`;
 }
 
 const obterCarrinhoDetalhado = (carrinho) => {
@@ -112,4 +112,8 @@ const finalizarCompra = () => {
     window.open(url, '_blank');
     localStorage.setItem('carrinho','[]')
     verificarCarrinhoVazio();
+}
+
+const formatarPreco = (preco) => {
+    return parseFloat(preco).toLocaleString('pt-BR',{style: 'currency', currency:'BRL'});
 }
