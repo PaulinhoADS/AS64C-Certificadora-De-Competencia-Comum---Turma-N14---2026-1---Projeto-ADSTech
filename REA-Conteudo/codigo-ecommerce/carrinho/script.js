@@ -34,11 +34,10 @@ const verificarCarrinhoVazio = () => {
 }
 
 const carregarCarrinho = (carrinho) => {
-    const produtos = obterCarrinhoDetalhado(carrinho);
+    const [produtos, valor_total] = obterCarrinhoDetalhado(carrinho);
 
     const itensCarrinho = document.querySelector('.itens-carrinho')
     const fragment = document.createDocumentFragment();
-    let valorTotal = 0;
     produtos.forEach((e) => {
         const item = document.createElement('div');
         item.classList.add('item')
@@ -47,7 +46,7 @@ const carregarCarrinho = (carrinho) => {
 
             <div class="item-detalhes"">
                 <h3>${e.nome}</h3>
-                <p class="preco-unitario">${formatarPreco(e.preco)}</p>
+                <p class="preco-unitario">${e.preco}</p>
 
                 <div class="item-acoes">
                     <input type="number" value="${e.quantidade}" min="1" class="qtd-input">
@@ -56,30 +55,33 @@ const carregarCarrinho = (carrinho) => {
              </div>
 
             <div class="item-total">
-                <p class="preco-subtotal">${formatarPreco(e.valor_total)}</p>
+                <p class="preco-subtotal">${e.valor_total_string}</p>
              </div>
         `;
         item.innerHTML=string;
         item.setAttribute('data-id',e.id)
         fragment.appendChild(item);
-        valorTotal += e.valor_total;
     });
     itensCarrinho.appendChild(fragment);
-    document.querySelector('.valor-total').textContent = `${formatarPreco(valorTotal)}`;
+    document.querySelector('.valor-total').textContent = valor_total;
 }
 
 const obterCarrinhoDetalhado = (carrinho) => {
     const produtosTotal = JSON.parse(localStorage.getItem('produtos'));
-    return carrinho.map(e => {
+    carrinho = carrinho.map(e => {
         const produto = produtosTotal[e.id_produto];
         const preco = parseFloat(produto.preco);
+        const valor_total = e.quantidade * preco;
         return {
             ...produto,
             quantidade: e.quantidade,
-            preco: preco,
-            valor_total: e.quantidade * preco
+            preco: formatarPreco(preco),
+            valor_total: valor_total,
+            valor_total_string: formatarPreco(valor_total)
         };
     });
+    const valor_total_string = formatarPreco(carrinho.reduce((total, e) => total + e.valor_total, 0));
+    return [carrinho, valor_total_string];
 }
 
 const limparTela = () => {
