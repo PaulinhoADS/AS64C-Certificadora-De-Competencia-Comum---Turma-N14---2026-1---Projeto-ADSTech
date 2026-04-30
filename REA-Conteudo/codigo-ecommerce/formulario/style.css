@@ -58,7 +58,7 @@
 
 .btn-submit:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255,204,0,0.12);
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.12);
 }
 
 .btn-submit:active {

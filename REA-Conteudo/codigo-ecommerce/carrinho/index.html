@@ -2,45 +2,45 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="../vitrine/" class="nav-link">Produtos</a></li>
-                    <li class="nav-item"><a href="../formulario/" class="nav-link">Cadastrar Produtos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Carrinho</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
-            </div>
-            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+  <header>
+    <div class="header-container">
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../vitrine/" class="nav-link">Produtos</a></li>
+          <li class="nav-item"><a href="../formulario/" class="nav-link">Cadastrar Produtos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Carrinho</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+      </div>
+      <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="carrinho-container">
+      <h1>Seu Carrinho</h1>
+
+      <div class="itens-carrinho">
+
+        <div class="carrinho-vazio oculto">
+          <p>🛒 Seu carrinho está vazio.</p>
+          <a href="../vitrine/" class="btn-voltar">Ir para a Vitrine</a>
         </div>
-    </header>
 
-    <main>
-        <div class="carrinho-container">
-            <h1>Seu Carrinho</h1>
-
-            <div class="itens-carrinho">
-
-                <div class="carrinho-vazio oculto">
-                    <p>🛒 Seu carrinho está vazio.</p>
-                    <a href="../vitrine/" class="btn-voltar">Ir para a Vitrine</a>
-                </div>
-
-                <!-- EXEMPLO PARA A AULA DE HTML, CSS, acho que dá pra remover na de js pra colocar os itens conforme estão no localStorage -->
-                <!-- <div class="item">
+        <!-- EXEMPLO PARA A AULA DE HTML, CSS, acho que dá pra remover na de js pra colocar os itens conforme estão no localStorage -->
+        <!-- <div class="item">
                     <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/400945/xlarge/SSD-Kingston-Nv2-500GB-M-2-2280-NVME-PCIE-4-0-X4-Leitura-3500MB-s-E-Grava-o-2100MB-s-Preto-Snv2s-500g_1777055952.jpg" alt="SSD-Kingston-Nv2-500GB-M-2">
                     <div class="item-detalhes"">
                 <h3>SSD Kingston Nv2 500GB, M.2 2280, NVME PCIE 4.0 X4, Leitura 3500MB/s E Gravação 2100MB/s, Preto - Snv2s/500g</h3>
@@ -55,19 +55,19 @@
                     </div>
                 </div> -->
 
-            </div>
+      </div>
 
-            <div class="resumo-carrinho oculto">
-                <h2>Total: <span class="valor-total">R$ 0,00</span></h2>
-                <button onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
-            </div>
-        </div>
-    </main>
+      <div class="resumo-carrinho oculto">
+        <h2>Total: <span class="valor-total">R$ 0,00</span></h2>
+        <button onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <p>&copy; 2026 | E-commerce</p>
-    </footer>
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2026 | E-commerce</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
