@@ -73,3 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarValorCarrinho();
   })();
 });
+
+const formatarPreco = (preco) => {
+    return parseFloat(preco).toLocaleString('pt-BR',{style: 'currency', currency:'BRL'});
+}
