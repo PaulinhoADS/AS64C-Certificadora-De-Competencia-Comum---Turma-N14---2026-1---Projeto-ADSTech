@@ -23,3 +23,7 @@ const notificar = () => {
         toast.classList.remove('mostrar');
     }, 3000);
 }
+
+const atualizarValorCarrinho = (() => {
+    document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho')||[])).length
+})();
