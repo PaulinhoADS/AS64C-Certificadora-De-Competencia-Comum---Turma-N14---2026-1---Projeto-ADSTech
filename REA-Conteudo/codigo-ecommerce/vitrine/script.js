@@ -74,6 +74,22 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 });
 
+const adicionarNoCarrinho = (e) => {
+  const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+  const id = e.target.closest('.product-card').getAttribute('data-id');
+  const item = carrinho.find((e)=>e.id_produto==id);
+
+  if(item){
+    item.quantidade += 1;
+  }else{
+    carrinho.push({id_produto: id, quantidade: 1})
+  }
+
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  atualizarValorCarrinho();
+  notificar();
+}
+
 const formatarPreco = (preco) => {
     return parseFloat(preco).toLocaleString('pt-BR',{style: 'currency', currency:'BRL'});
 }
