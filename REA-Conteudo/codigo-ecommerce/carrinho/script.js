@@ -103,14 +103,13 @@ const alterarQuantidade = (id, quantidade) => {
 }
 
 const finalizarCompra = () => {
-    const produtos = obterCarrinhoDetalhado(JSON.parse(localStorage.getItem('carrinho')));
+    const [produtos, valor_total] = obterCarrinhoDetalhado(JSON.parse(localStorage.getItem('carrinho')));
     let url = 'https://wa.me/5544999410088?text=Olá,%20fiz%20a%20compra%20dos%20seguintes%20itens:%0A';
     let valorTotal = 0;
     produtos.forEach((e) => {
-        url += `-%20${e.quantidade}x%20${e.nome}%20(R$%20${e.valor_total.toFixed(2)})%0A`;
-        valorTotal += e.valor_total;
+        url += `-%20${e.quantidade}x%20${e.nome}%20(${e.valor_total_string})%0A`;
     });
-    url += `%0A*Total:%20R$%20${valorTotal.toFixed(2)}*`;
+    url += `%0A*Total:%20${valor_total}*`;
     window.open(url, '_blank');
     localStorage.setItem('carrinho','[]')
     verificarCarrinhoVazio();
