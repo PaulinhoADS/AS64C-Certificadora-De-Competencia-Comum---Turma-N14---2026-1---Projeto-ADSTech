@@ -25,5 +25,5 @@ const notificar = () => {
 }
 
 const atualizarValorCarrinho = (() => {
-  document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho') || [])).length
+  document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho')) || []).length
 })();
