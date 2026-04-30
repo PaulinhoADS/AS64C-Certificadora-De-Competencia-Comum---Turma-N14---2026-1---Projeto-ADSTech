@@ -77,3 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const formatarPreco = (preco) => {
     return parseFloat(preco).toLocaleString('pt-BR',{style: 'currency', currency:'BRL'});
 }
+
+const atualizarValorCarrinho = () => {
+    document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho')||[])).length
+}
