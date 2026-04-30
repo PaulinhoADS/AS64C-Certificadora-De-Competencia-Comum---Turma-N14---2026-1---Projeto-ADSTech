@@ -48,4 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
     filterProducts();
     localStorage.removeItem('sprintSearch');
   }
+
+  const render = (() => {
+    const grid = document.querySelector('.product-grid');
+    const produtos = Object.entries(JSON.parse(localStorage.getItem('produtos')));
+    const cards = document.querySelectorAll('.product-card');
+    const fragment = document.createDocumentFragment();
+    cards.forEach((e) => e.remove());
+    produtos.forEach((e) => {
+      e = e[1]
+      const div = document.createElement('div');
+      div.classList.add('product-card');
+      div.setAttribute('data-id', e.id);
+
+      div.innerHTML = `<img src="${e.foto}" alt="${e.nome}">
+      <h3>${e.nome}</h3>
+      <p>${e.descricao}</p>
+      <p class="product-price">${formatarPreco(e.preco)}</p>
+      <div class="product-buy-buttons"><button class="btn-buy" onclick="adicionarNoCarrinho(event)">Adicionar ao Carrinho</button></div>`
+
+      fragment.appendChild(div);
+    });
+    grid.appendChild(fragment);
+    atualizarValorCarrinho();
+  })();
 });
