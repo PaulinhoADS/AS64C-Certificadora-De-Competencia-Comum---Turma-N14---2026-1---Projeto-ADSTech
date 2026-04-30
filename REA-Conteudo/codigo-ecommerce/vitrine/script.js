@@ -81,3 +81,26 @@ const formatarPreco = (preco) => {
 const atualizarValorCarrinho = () => {
     document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho')||[])).length
 }
+
+let toastTimeout;
+let blinkTimeout;
+
+const notificar = () => {
+    const toast = document.querySelector('.toast');
+
+    clearTimeout(toastTimeout);
+    clearTimeout(blinkTimeout);
+    
+    if(toast.classList.contains('mostrar')) {
+      toast.classList.remove('mostrar');
+      blinkTimeout = setTimeout(() => {
+        toast.classList.add('mostrar')
+      }, 150);
+    }else{
+      toast.classList.add('mostrar')
+    }
+
+    toastTimeout = setTimeout(() => {
+        toast.classList.remove('mostrar');
+    }, 3000);
+}
