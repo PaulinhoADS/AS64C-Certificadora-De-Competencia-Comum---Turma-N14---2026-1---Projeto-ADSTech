@@ -22,6 +22,7 @@ const verificarCarrinhoVazio = () => {
     const carrinhoVazio = document.querySelector('.carrinho-vazio');
     const resumoCarrinho = document.querySelector('.resumo-carrinho');
 
+    atualizarValorCarrinho();
     resumoCarrinho.classList.remove('oculto');
     carrinhoVazio.classList.remove('oculto');
     limparTela();
@@ -117,4 +118,8 @@ const finalizarCompra = () => {
 
 const formatarPreco = (preco) => {
     return parseFloat(preco).toLocaleString('pt-BR',{style: 'currency', currency:'BRL'});
+}
+
+const atualizarValorCarrinho = () => {
+    document.querySelector('.cart-count').textContent = (JSON.parse(localStorage.getItem('carrinho')||[])).length
 }
