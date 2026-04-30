@@ -6,17 +6,26 @@
     <title>Cadastro de Produto</title>
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="logo">Meu e-Commerce</div>
+    <div class="header-container">
         <nav>
-            <ul>
-                <li><a href="../vitrine/">Vitrine</a></li>
-                <li><a href="#">Cadastrar Produto</a></li>
-                <li><a href="../carrinho/">Carrinho</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../vitrine/" class="nav-link">Produtos</a>
+          <li class="nav-item"><a href="#" class="nav-link">Cadastrar Produtos</a>
+          <li class="nav-item"><a href="../carrinho/" class="nav-link">Carrinho</a>
+          </li>
             </ul>
         </nav>
+      <div class="header-actions">
+        <a href="../carrinho/" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+      </div>
+      <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
     </header>
 
     <main>
@@ -52,7 +61,7 @@
     <div class="toast">Produto salvo com sucesso!</div>
     
     <footer>
-        <p>&copy; 2026 Meu e-Commerce. Todos os direitos reservados.</p>
+        <p>&copy; 2026 | E-commerce</p>
     </footer>
     <script src="script.js"></script>
 </body>
