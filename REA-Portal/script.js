@@ -54,41 +54,79 @@ let baseDeAulas;
 })();
 
 /**
- * FUNÇÃO PARA INJETAR O CONTEÚDO DINAMICAMENTE
- * Pega os dados dos objetos acima e constrói o grid com os 3 vídeos.
+ * FUNÇÃO ATUALIZADA: Agora exibe a lista de aulas para o usuário escolher
  */
 function carregarAula(moduloEscolhido) {
     const dados = baseDeAulas[moduloEscolhido];
     const containerConteudo = document.getElementById('conteudo-aula');
 
-    // Variável para guardar o HTML gerado de todos os 3 vídeos do módulo
-    let htmlDosVideos = '';
+    // Passamos o 'index' para saber exatamente qual vídeo da lista foi clicado
+    let htmlListaVideos = '';
 
-    // Um "Laço de Repetição" (loop) que passa por cada aula e gera o quadradinho do vídeo
-    dados.aulas.forEach(aula => {
-        htmlDosVideos += `
-            <div class="video-box">
-                <h3>${aula.titulo}</h3>
-                <div class="video-wrapper">
-                    <iframe src="${aula.url}" title="${aula.titulo}" allowfullscreen></iframe>
+        dados.aulas.forEach((aula, index) => {
+            // 1. O link vem assim: https://www.youtube.com/embed/wcW8SvbnJYE
+            // 2. O split recorta e pega só o ID: wcW8SvbnJYE
+            const videoId = aula.url.split('/embed/')[1].split('?')[0]; 
+            
+            // 3. Montamos a URL oficial da thumbnail em alta qualidade (hqdefault)
+            const thumbUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+            htmlListaVideos += `
+                <div class="video-box" onclick="assistirVideo('${moduloEscolhido}', ${index})" style="cursor: pointer; transition: transform 0.2s;">
+                    <h3>${aula.titulo}</h3>
+                    
+                    <!-- Nova estrutura da capa do vídeo -->
+                    <div style="position: relative; margin-bottom: 15px;">
+                        <img src="${thumbUrl}" alt="Capa do vídeo ${aula.titulo}" style="width: 100%; border-radius: 8px; object-fit: cover; aspect-ratio: 16/9;">
+                        
+                        <!-- Ícone de Play centralizado por cima da imagem -->
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255, 0, 0, 0.8); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5V19L19 12L8 5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <p class="texto-educativo">${aula.desc}</p>
                 </div>
-                <p class="texto-educativo">${aula.desc}</p>
-            </div>
-        `;
-    });
+            `;
+        });
 
-    // Injeta a Introdução principal em cima e os vídeos embaixo
     containerConteudo.innerHTML = `
         <h2>${dados.titulo}</h2>
         <div class="intro-aula">
             ${dados.intro}
         </div>
-        
         <div class="grid-videos">
-            ${htmlDosVideos}
+            ${htmlListaVideos}
         </div>
     `;
     
-    // Muda a página para exibir a sala de aula
     mostrarSecao('sala-aula');
+}
+
+/**
+ * NOVA FUNÇÃO: Renderiza o vídeo maximizado e a descrição estilo YouTube
+ */
+function assistirVideo(modulo, indexVideo) {
+    const aula = baseDeAulas[modulo].aulas[indexVideo];
+    const playerContainer = document.getElementById('player-container');
+
+    playerContainer.innerHTML = `
+        <div class="video-maximized">
+            <div class="video-wrapper" style="margin-bottom: 0;">
+                <iframe src="${aula.url}?autoplay=1" title="${aula.titulo}" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            
+            <div class="info-video" style="padding: 20px 0;">
+                <h2 style="color: var(--cor-destaque-titulos); font-size: 2rem;">${aula.titulo}</h2>
+                <div class="intro-aula" style="margin-top: 20px;">
+                    <p>${aula.desc}</p>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Muda a página para exibir o player
+    mostrarSecao('tela-player');
 }
