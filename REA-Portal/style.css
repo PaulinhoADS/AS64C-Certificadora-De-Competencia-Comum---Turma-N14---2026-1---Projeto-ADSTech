@@ -424,6 +424,22 @@ body {
     font-size: 0.9rem;
 }
 
+/* --- ESTILO DO PLAYER MAXIMIZADO --- */
+.video-maximized {
+    max-width: 1200px; /* Mais largo para dar imersão */
+    margin: 0 auto;
+    background-color: var(--bg-secundario);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.video-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-verde);
+}
+
 /* --- RESPONSIVIDADE DO CABEÇALHO (Celulares e Tablets) --- */
 @media (max-width: 768px) {
     .navbar {
