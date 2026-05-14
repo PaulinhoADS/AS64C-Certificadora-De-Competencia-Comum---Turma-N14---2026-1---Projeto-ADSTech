@@ -8,28 +8,51 @@
                 "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
                 "desc": "Conheça o que é HTML, como ele estrutura uma página e quais tags vamos usar ao longo do módulo.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Criar um arquivo index.html.",
+                    "Adicionar um elemento header.",
+                    "Adicionar um elemento main.",
+                    "Dentro de main adicionar uma section.",
+                    "Dentro da section, adicionar um título e faça uma lista.",
+                    "Adicionar um footer."
+                ]
             },
             {
                 "titulo": "Vídeo 2: HTML da Vitrine",
                 "url": "https://www.youtube.com/embed/wcW8SvbnJYE",
                 "desc": "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Adicionar dois novos produtos.",
+                    "Criar uma nova categoria de produtos.",
+                    "Adicionar um novo item no menu.",
+                    "Trocar os ícones da aplicação.",
+                    "Inserir uma nova seção chamada “Promoções”."
+                ]
             },
             {
                 "titulo": "Vídeo 3: HTML do Formulário",
                 "url": "https://www.youtube.com/embed/ZnZqB5Z75zI",
                 "desc": "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Adicionar um campo \"Categoria\" do tipo texto.",
+                    "Adicionar um campo \"Quantidade em estoque\" do tipo número.",
+                    "Torne o campo de URL opcional.",
+                    "Adicionar um botão que limpa todos os campos do formulário."
+                ]
             },
             {
                 "titulo": "Vídeo 4: HTML do Carrinho",
                 "url": "https://www.youtube.com/embed/HX43QiFApWc",
                 "desc": "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Criar um campo de cupom de desconto com um input de texto e um botão \"Aplicar\".",
+                    "Adicionar uma linha no resumo exibindo o valor do frete.",
+                    "Trocar o emoji do carrinho vazio por um ícone do Font Awesome.",
+                    "Adicionar uma mensagem de aviso no resumo informando o valor mínimo para frete grátis."
+                ]
             }
         ]
     },
@@ -45,25 +68,54 @@
                 "exercicios": []
             },
             {
-                "titulo": "Vídeo 2: Estilizando a Vitrine",
+                "titulo": "Vídeo 2: Estilos Globais",
+                "url": "https://www.youtube.com/embed/0JMdXFHo5SY",
+                "desc": "Antes de estilizar cada página, vamos configurar as variáveis de cor, o reset e os componentes compartilhados por toda a aplicação.",
+                "materiais": [],
+                "exercicios": [
+                    "Trocar o valor de \"--accent\" por outra cor e identificar onde ela aparece na página.",
+                    "Alterar o valor de \"--transition\" para \"1s ease\" e testar os efeitos de hover.",
+                    "Reposicionar o toast alterando os valores de \"bottom\" e \"right\".",
+                    "Alterar o breakpoint da media query e redimensionar a janela para ver a diferença.",
+                    "Adicionar uma nova variável CSS para uma cor secundária e aplicá-la em algum elemento."
+                ]
+            },
+            {
+                "titulo": "Vídeo 3: Estilizando a Vitrine",
                 "url": "https://www.youtube.com/embed/y83x7MgzWOA",
                 "desc": "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Alterar cores da aplicação.",
+                    "Criar novo efeito hover.",
+                    "Adicionar animação nos cards.",
+                    "Criar modo escuro.",
+                    "Alterar quantidade de colunas."
+                ]
             },
             {
-                "titulo": "Vídeo 3: Estilizando o Formulário",
+                "titulo": "Vídeo 4: Estilizando o Formulário",
                 "url": "https://www.youtube.com/embed/pXRviuL6vMY",
                 "desc": "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Adicionar um efeito no botão de envio que reduza levemente seu tamanho ao clique.",
+                    "Trocar a mudança de \"border-color\" no foco por uma borda lateral.",
+                    "Adicionar um ícone do Font Awesome dentro do botão de envio.",
+                    "Criar um segundo botão de limpar o formulário estilizado de forma diferente do botão de envio."
+                ]
             },
             {
-                "titulo": "Vídeo 4: Estilizando o Carrinho",
+                "titulo": "Vídeo 5: Estilizando o Carrinho",
                 "url": "https://www.youtube.com/embed/9arUOL3N6Co",
                 "desc": "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Alterar o \"object-fit\" da imagem.",
+                    "Adicionar uma transição de cor no botão de remover item.",
+                    "Criar uma borda lateral colorida no bloco de resumo.",
+                    "Adicionar um efeito de elevação no hover dos itens do carrinho."
+                ]
             }
         ]
     },
@@ -83,21 +135,38 @@
                 "url": "https://www.youtube.com/embed/FM7MFYoylVs",
                 "desc": "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Criar filtro por preço.",
+                    "Adicionar botão de remover do carrinho.",
+                    "Criar categorias de produtos.",
+                    "Adicionar ordenação por preço (crescente e decrescente).",
+                    "Criar sistema de favoritos.",
+                    "Exibir valor total do carrinho."
+                ]
             },
             {
                 "titulo": "Vídeo 3: Validação do Formulário",
                 "url": "https://www.youtube.com/embed/gKM15TaKLUI",
                 "desc": "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Impedir que um produto seja salvo com preço negativo ou zerado.",
+                    "Adicionar um \"console.log\" antes de salvar e observar os dados capturados no console do navegador.",
+                    "Exibir um resumo do produto cadastrado na tela logo após salvar.",
+                    "Adicionar uma confirmação antes de limpar o formulário."
+                ]
             },
             {
                 "titulo": "Vídeo 4: Lógica do Carrinho",
                 "url": "https://www.youtube.com/embed/VPRjCeoBqrI",
                 "desc": "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente.",
                 "materiais": [],
-                "exercicios": []
+                "exercicios": [
+                    "Adicionar uma confirmação antes de remover um produto do carrinho.",
+                    "Criar um botão \"Esvaziar Carrinho\" que zere todos os itens de uma vez.",
+                    "Impedir que o campo de quantidade aceite valores menores que 1.",
+                    "Calcular e exibir o valor do frete com base no total da compra."
+                ]
             }
         ]
     }
