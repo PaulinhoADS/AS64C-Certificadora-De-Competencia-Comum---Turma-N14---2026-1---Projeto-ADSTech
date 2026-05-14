@@ -163,7 +163,7 @@ Nesta aula subimos bastante o nível do nosso JavaScript! Aprendemos:
 
 # Exercícios
 
-1. Adicionar uma janela de confirmação (usando `confirm()`) antes de excluir um produto no `removerProduto`.
-2. Criar um botão "Esvaziar Carrinho" na tela de resumo que zere o array do carrinho sem precisar finalizar a compra.
-3. Modificar o evento de `change` da quantidade: se o usuário tentar digitar "0" ou um número negativo no input numérico, forçar a exclusão do produto ou restaurar o valor para "1".
-4. Substituir a montagem manual com `%20` no link do WhatsApp usando a função nativa `encodeURIComponent()` do JavaScript para limpar a escrita do código.
+1. Adicionar uma confirmação antes de remover um produto do carrinho.
+2. Criar um botão "Esvaziar Carrinho" que zere todos os itens de uma vez.
+3. Impedir que o campo de quantidade aceite valores menores que 1.
+4. Calcular e exibir o valor do frete com base no total da compra.

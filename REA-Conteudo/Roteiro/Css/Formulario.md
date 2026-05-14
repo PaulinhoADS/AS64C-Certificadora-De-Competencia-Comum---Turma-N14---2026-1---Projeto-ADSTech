@@ -143,8 +143,7 @@ Nesta aula aprendemos:
 
 # Exercícios
 
-1. Remover o `font-family: inherit` do textarea e observar a diferença na fonte.
-2. Trocar `transition: border-color` por `transition: all` e verificar se o comportamento muda.
-3. Adicionar um efeito `:active` no `.btn-voltar` do carrinho seguindo o mesmo padrão do `.btn-submit`.
-4. Alterar o `width: 100%` do botão para `width: auto` e observar o impacto no layout.
-5. Adicionar um `border-left: 4px solid var(--accent)` nos campos com `:focus` no lugar da mudança de `border-color`.
+1. Adicionar um efeito no botão de envio que reduza levemente seu tamanho ao clique.
+2. Trocar a mudança de `border-color` no foco por uma borda lateral.
+3. Adicionar um ícone do Font Awesome dentro do botão de envio.
+4. Criar um segundo botão de limpar o formulário estilizado de forma diferente do botão de envio.

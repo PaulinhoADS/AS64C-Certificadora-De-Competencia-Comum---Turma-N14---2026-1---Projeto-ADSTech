@@ -303,8 +303,7 @@ Nesta aula aprendemos:
 
 # Exercício para os alunos
 
-1. Adicionar um novo campo chamado "Categoria" do tipo texto.
-2. Adicionar um campo "Quantidade em estoque" do tipo number.
-3. Tornar o campo de URL não obrigatório e testar o comportamento do formulário.
-4. Adicionar um segundo botão do tipo `reset` que limpa todos os campos.
-5. Criar um novo item no menu de navegação chamado "Relatórios".
+1. Adicionar um campo "Categoria" do tipo texto.
+2. Adicionar um campo "Quantidade em estoque" do tipo número.
+3. Torne o campo de URL opcional.
+4. Adicionar um botão que limpa todos os campos do formulário.

@@ -396,8 +396,8 @@ Nesta aula aprendemos:
 
 # Exercícios
 
-1. Trocar a cor de `--accent` e observar onde ela muda na página.
-2. Remover o `box-sizing: border-box` do reset e observar o que muda no layout.
-3. Alterar o valor de `--transition` para `1s ease` e passar o mouse nos links do menu.
-4. Mudar o `bottom` e o `right` do toast para reposicioná-lo na tela.
-5. Alterar o breakpoint da media query de `700px` para `900px` e redimensionar a janela do navegador.
+1. Trocar o valor de `--accent` por outra cor e identificar onde ela aparece na página.
+2. Alterar o valor de `--transition` para `1s ease` e testar os efeitos de hover.
+3. Reposicionar o toast alterando os valores de `bottom` e `right`.
+4. Alterar o breakpoint da media query e redimensionar a janela para ver a diferença.
+5. Adicionar uma nova variável CSS para uma cor secundária e aplicá-la em algum elemento.

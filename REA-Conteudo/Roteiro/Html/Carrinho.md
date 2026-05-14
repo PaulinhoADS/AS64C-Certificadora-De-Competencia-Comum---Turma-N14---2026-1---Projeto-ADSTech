@@ -126,8 +126,7 @@ Nesta aula aprendemos:
 
 # Exercício para os alunos
 
-1. Adicionar um segundo botão dentro de `item-acoes` chamado "Salvar para depois".
-2. Criar um campo de cupom de desconto com um input de texto e um botão "Aplicar".
-3. Adicionar uma linha no resumo exibindo o valor do frete.
-4. Trocar o emoji do carrinho vazio por um ícone do Font Awesome.
-5. Adicionar uma mensagem de aviso dentro do resumo: "Frete grátis acima de R$ 299,00".
+1. Criar um campo de cupom de desconto com um input de texto e um botão "Aplicar".
+2. Adicionar uma linha no resumo exibindo o valor do frete.
+3. Trocar o emoji do carrinho vazio por um ícone do Font Awesome.
+4. Adicionar uma mensagem de aviso no resumo informando o valor mínimo para frete grátis.

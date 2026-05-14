@@ -292,8 +292,7 @@ Nesta aula aprendemos:
 
 # Exercícios
 
-1. Alterar o `object-fit` da imagem do item de `cover` para `contain` e observar a diferença.
-2. Remover o `flex: 1` de `.item-detalhes` e observar o que acontece com o layout.
-3. Adicionar um `transition` no `.btn-remover` para animar a mudança de cor no hover.
-4. Criar uma borda colorida no `.resumo-carrinho` usando `border-left` com a cor `--accent`.
-5. Alterar o `min-width` de `.item-total` para `0` e verificar o impacto no alinhamento dos preços.
+1. Alterar o `object-fit` da imagem.
+2. Adicionar uma transição de cor no botão de remover item.
+3. Criar uma borda lateral colorida no bloco de resumo.
+4. Adicionar um efeito de elevação no hover dos itens do carrinho.

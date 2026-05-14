@@ -180,8 +180,7 @@ Nesta aula aprendemos:
 
 # Exercícios
 
-1. Adicionar uma validação manual que impeça salvar um produto com preço negativo, exibindo um `alert`.
-2. Modificar a função `getId` para que o ID gerado seja um número aleatório em vez de sequencial.
-3. Adicionar um `console.log(dados)` antes de salvar e observar no console do navegador o que o `FormData` capturou.
-4. Remover o `event.preventDefault()` e observar o que acontece ao enviar o formulário.
-5. Trocar o `event.target.reset()` por uma limpeza manual de apenas um campo usando `querySelector`.
+1. Impedir que um produto seja salvo com preço negativo ou zerado.
+2. Adicionar um `console.log` antes de salvar e observar os dados capturados no console do navegador.
+3. Exibir um resumo do produto cadastrado na tela logo após salvar.
+4. Adicionar uma confirmação antes de limpar o formulário.
