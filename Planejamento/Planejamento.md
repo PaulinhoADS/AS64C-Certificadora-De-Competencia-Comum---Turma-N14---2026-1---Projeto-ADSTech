@@ -1,6 +1,6 @@
 ## Materiais Didáticos e Vídeos (Planejamento)
 
-Conforme os requisitos da disciplina, o REA será composto por vídeo-aulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
+Conforme os requisitos da disciplina, o REA será composto por videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado em HTML, CSS e JavaScript e ainda uma Página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
 | Título do Vídeo | Descrição das Principais Ideias | Público-Alvo |
 | :--- | :--- | :--- |

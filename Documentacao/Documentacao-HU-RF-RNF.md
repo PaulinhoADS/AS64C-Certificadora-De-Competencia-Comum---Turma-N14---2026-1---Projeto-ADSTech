@@ -4,7 +4,7 @@ Estas histórias descrevem as necessidades dos nossos usuários (alunos iniciant
 
 | ID | Persona | Necessidade (O que quero) | Finalidade (Para que) |
 | :--- | :--- | :--- | :--- |
-| **US01** | Estudante Iniciante | Acessar o módulo (vídeo-aula) sobre estrutura HTML | Aprender a montar a base da minha própria loja online. |
+| **US01** | Estudante Iniciante | Acessar o módulo (videoaula) sobre estrutura HTML | Aprender a montar a base da minha própria loja online. |
 | **US02** | Estudante | Ativar legendas nos vídeos didáticos | Garantir a compreensão do conteúdo em qualquer ambiente (Acessibilidade). |
 | **US03** | Estudante | Acessar o módulo de JavaScript básico | Aprender a criar interatividade simples em páginas web. |
 | **US04** | Aluno de ADS | Visualizar o código-fonte do e-commerce no GitHub | Comparar com o vídeo e praticar a implementação técnica. |

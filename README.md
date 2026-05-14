@@ -47,7 +47,7 @@ Este repositório contém o planejamento para o desenvolvimento de Recursos Educ
 * Capacitar pessoas leigas a entender a estrutura de uma página da web (e-commerce), utilizando videoaulas curtas e repositório de código fonte.
 * Demonstrar a aplicação de práticas ágeis no desenvolvimento de um projeto de REA. Utilizaremos Scrum para gestão de sprints e Kanban para o fluxo de tarefas. O versionamento de código será feito no GitHub, seguindo padrões de commits técnicos
 
-## Materiais Didáticos e estrutura dos Módulos (Vídeo-Aulas) - (Planejamento)
+## Materiais Didáticos e estrutura dos Módulos (VideoAulas) - (Planejamento)
 
 Conforme os requisitos da disciplina, o REA será organizado em módulos temáticos. Cada módulo contará com videoaulas de curta duração (5 a 7 minutos) com legendas para acessibilidade, um repositório aberto de código-fonte comentado (HTML, CSS e JavaScript) e uma página web de descrição da proposta hospedada no GitHub Pages. Abaixo, detalhamos o planejamento dos vídeos:
 
@@ -111,7 +111,7 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 <br><br>
 
-#### Link para acesso ao Portal REA (EM CONSTRUÇÃO) que HOSPEDARÁ as vídeo-aulas e os materiais didáticos do projeto ADSTech. A interface ESTÁ SENDO projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
+#### Link para acesso ao Portal REA (EM CONSTRUÇÃO) que HOSPEDARÁ as videoaulas e os materiais didáticos do projeto ADSTech. A interface ESTÁ SENDO projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
 
 <a href="https://paulinhoads.github.io/AS64C-Certificadora-De-Competencia-Comum---Turma-N14---2026-1---Projeto-ADSTech/REA-Portal/" target="_blank" rel="noopener noreferrer">Portal-REA</a>
 
