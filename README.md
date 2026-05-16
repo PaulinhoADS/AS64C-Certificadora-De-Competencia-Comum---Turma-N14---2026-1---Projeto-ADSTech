@@ -36,7 +36,6 @@ O projeto **ADSTech** consiste em um Recurso Educacional Aberto voltado para o e
 
 ---
 
-> Observação: Este planejamento inicial está sujeito a alterações conforme o feedback do professor.
 
 ## Planejamento 
 
@@ -90,10 +89,6 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 ---
 
-> Observação: Este planejamento inicial está sujeito a alterações conforme o feedback do professor.
-
----
-
 ## Links para Documentos neste repositório
 
 - [Documentação](./Documentacao/Documentacao.md)
@@ -111,7 +106,7 @@ Carga horária total prevista para cada integrante: **120 horas**.
 
 <br><br>
 
-#### Link para acesso ao Portal REA (EM CONSTRUÇÃO) que HOSPEDARÁ as videoaulas e os materiais didáticos do projeto ADSTech. A interface ESTÁ SENDO projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
+#### Link para acesso ao Portal REA que hospeda as videoaulas e os materiais didáticos do projeto ADSTech. A interface foi projetada para atuar como um Recurso Educacional Aberto, oferecendo uma trilha de aprendizagem lúdica e simplificada sobre o desenvolvimento de e-commerce para o público leigo, integrando conhecimentos técnicos de Front-End e metodologias ágeis.
 
 <a href="https://paulinhoads.github.io/AS64C-Certificadora-De-Competencia-Comum---Turma-N14---2026-1---Projeto-ADSTech/REA-Portal/" target="_blank" rel="noopener noreferrer">Portal-REA</a>
 
