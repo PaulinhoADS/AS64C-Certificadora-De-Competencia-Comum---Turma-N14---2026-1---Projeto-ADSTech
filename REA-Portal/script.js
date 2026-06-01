@@ -119,7 +119,20 @@ function carregarAula(moduloEscolhido) {
  */
 function assistirVideo(modulo, indexVideo) {
     const aula = baseDeAulas[modulo].aulas[indexVideo];
+    const exercicios = aula.exercicios;
+    const materiais = aula.materiais;
     const playerContainer = document.getElementById('player-container');
+
+    const materiaisHTML = (materiais.join('')).replace(/<code>/g, '<button class="copy-btn" title="Copiar código"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><code>');;
+
+    const exerciciosHTML = (exercicios && exercicios.length > 0) ? `
+            <h2 style="font-size: 2rem;">Exercícios:</h2>
+            <div class="intro-aula" style="margin-top: 20px; list-style-position: inside;">
+                <ol>
+                    ${exercicios.map((e) => `<li>${e}</li>`).join("")}
+                </ol>
+            </div>
+        ` : "";
 
     playerContainer.innerHTML = `
         <div class="video-maximized">
@@ -132,6 +145,8 @@ function assistirVideo(modulo, indexVideo) {
                 <div class="intro-aula" style="margin-top: 20px;">
                     <p>${aula.desc}</p>
                 </div>
+                ${materiaisHTML}
+                ${exerciciosHTML}
             </div>
         </div>
     `;
