@@ -37,6 +37,15 @@ function mostrarSecao(idSecao) {
     const secaoDesejada = document.getElementById(idSecao);
     secaoDesejada.classList.remove('oculta');
     secaoDesejada.classList.add('ativa');
+
+    // Se a seção que estamos abrindo NÃO for a tela do player,
+    // limpamos o container do vídeo. Isso remove o iframe da página e faz o vídeo parar na hora.
+    if (idSecao !== 'tela-player') {
+        const playerContainer = document.getElementById('player-container');
+        if (playerContainer) {
+            playerContainer.innerHTML = ''; 
+        }
+    }
     
     // Rola a página para o topo suavemente para melhorar a experiência
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -54,7 +63,7 @@ let baseDeAulas;
 })();
 
 /**
- * FUNÇÃO ATUALIZADA: Agora exibe a lista de aulas para o usuário escolher
+ * Exibe a lista de aulas para o usuário escolher
  */
 function carregarAula(moduloEscolhido) {
     const dados = baseDeAulas[moduloEscolhido];
@@ -106,7 +115,7 @@ function carregarAula(moduloEscolhido) {
 }
 
 /**
- * NOVA FUNÇÃO: Renderiza o vídeo maximizado e a descrição estilo YouTube
+ * Renderiza o vídeo maximizado e a descrição estilo YouTube
  */
 function assistirVideo(modulo, indexVideo) {
     const aula = baseDeAulas[modulo].aulas[indexVideo];
