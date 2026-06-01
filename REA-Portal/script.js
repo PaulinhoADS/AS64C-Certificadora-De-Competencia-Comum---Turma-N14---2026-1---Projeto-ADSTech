@@ -18,6 +18,24 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('click',async (event)=>{
+    if(event.target.classList.contains('copy-btn') || event.target.closest('.copy-btn')) {
+        const button = event.target.closest('.copy-btn');
+
+        const code = button.nextElementSibling.textContent;
+
+        try {
+            await navigator.clipboard.writeText(code);
+            const originalText = button.innerHTML;
+            button.innerHTML = 'Copiado!';
+            setTimeout(() => button.innerHTML = originalText, 500);
+        } catch (error) {
+            console.error('Falha ao copiar: ',error);
+        }
+    }
+})
+
+
 /**
  * LÓGICA DE NAVEGAÇÃO SPA (Single Page Application)
  * Esta função recebe o ID da seção que será mostrada,
