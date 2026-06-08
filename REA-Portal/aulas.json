@@ -5,7 +5,7 @@
         "aulas": [
             {
                 "titulo": "Vídeo 1: Introdução ao HTML",
-                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "url": "https://www.youtube.com/embed/tfThhRghB94",
                 "desc": "Conheça o que é HTML, como ele estrutura uma página e quais tags vamos usar ao longo do módulo.",
                 "materiais": [
                     "<h2>O que é HTML?</h2>",
@@ -29,7 +29,7 @@
             },
             {
                 "titulo": "Vídeo 2: HTML da Vitrine",
-                "url": "https://www.youtube.com/embed/wcW8SvbnJYE",
+                "url": "https://www.youtube.com/embed/wY36Cb6DZ-g",
                 "desc": "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços.",
                 "materiais": [
                     "<h2>Estrutura da página</h2>",
@@ -160,7 +160,7 @@
             },
             {
                 "titulo": "Vídeo 3: Estilizando a Vitrine",
-                "url": "https://www.youtube.com/embed/y83x7MgzWOA",
+                "url": "https://www.youtube.com/embed/n5dKNB4oL2E",
                 "desc": "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid.",
                 "materiais": [
                     "<h2>Grid de produtos</h2>",
@@ -267,7 +267,7 @@
             },
             {
                 "titulo": "Vídeo 2: Interação na Vitrine",
-                "url": "https://www.youtube.com/embed/FM7MFYoylVs",
+                "url": "https://www.youtube.com/embed/wxcM_f-ny2Y",
                 "desc": "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela.",
                 "materiais": [
                     "<h2>Renderização dinâmica</h2>",
