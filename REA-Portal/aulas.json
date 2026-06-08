@@ -73,7 +73,7 @@
             },
             {
                 "titulo": "Vídeo 4: HTML do Carrinho",
-                "url": "https://www.youtube.com/embed/HX43QiFApWc",
+                "url": "https://www.youtube.com/embed/mNSQ5H5tyGY",
                 "desc": "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra.",
                 "materiais": [
                     "<h2>Estados da interface</h2>",
@@ -128,7 +128,7 @@
             },
             {
                 "titulo": "Vídeo 2: Estilos Globais",
-                "url": "https://www.youtube.com/embed/0JMdXFHo5SY",
+                "url": "https://www.youtube.com/embed/jp4bp-4jE3o",
                 "desc": "Antes de estilizar cada página, vamos configurar as variáveis de cor, o reset e os componentes compartilhados por toda a aplicação.",
                 "materiais": [
                     "<h2>O que é o global.css?</h2>",
@@ -208,7 +208,7 @@
             },
             {
                 "titulo": "Vídeo 5: Estilizando o Carrinho",
-                "url": "https://www.youtube.com/embed/9arUOL3N6Co",
+                "url": "https://www.youtube.com/embed/RKjlH2O1kis",
                 "desc": "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra.",
                 "materiais": [
                     "<h2>Layout do item</h2>",
@@ -239,7 +239,7 @@
         "aulas": [
             {
                 "titulo": "Vídeo 1: Introdução ao JS",
-                "url": "https://www.youtube.com/embed/OeTFAiYbR9o",
+                "url": "https://www.youtube.com/embed/fMkoG3PXvlo",
                 "desc": "Conheça a sintaxe do JavaScript moderno e os conceitos que vão aparecer ao longo do módulo.",
                 "materiais": [
                     "<h2>O que é JavaScript?</h2>",
@@ -321,7 +321,7 @@
             },
             {
                 "titulo": "Vídeo 4: Lógica do Carrinho",
-                "url": "https://www.youtube.com/embed/VPRjCeoBqrI",
+                "url": "https://www.youtube.com/embed/h5vBSSJrGjk",
                 "desc": "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente.",
                 "materiais": [
                     "<h2>Delegação de Eventos</h2>",
