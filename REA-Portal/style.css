@@ -498,3 +498,34 @@ pre code {
   background: #333;
   color: #fff;
 }
+
+#player-container h2 {
+    font-size: 2rem;
+    color: var(--cor-destaque-titulos);
+    margin-top: 20px;
+}
+
+#player-container ul,
+#player-container ol {
+    list-style-position: inside;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-verde);
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: #00c766;
+    transform: scale(1.03);
+}

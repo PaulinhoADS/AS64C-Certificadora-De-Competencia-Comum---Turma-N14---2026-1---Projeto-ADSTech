@@ -144,8 +144,8 @@ function assistirVideo(modulo, indexVideo) {
     const materiaisHTML = (materiais.join('')).replace(/<code>/g, '<button class="copy-btn" title="Copiar código"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><code>');;
 
     const exerciciosHTML = (exercicios && exercicios.length > 0) ? `
-            <h2 style="font-size: 2rem;">Exercícios:</h2>
-            <div class="intro-aula" style="margin-top: 20px; list-style-position: inside;">
+            <h2>Exercícios:</h2>
+            <div class="intro-aula">
                 <ol>
                     ${exercicios.map((e) => `<li>${e}</li>`).join("")}
                 </ol>
@@ -158,13 +158,14 @@ function assistirVideo(modulo, indexVideo) {
                 <iframe src="${aula.url}?autoplay=1" title="${aula.titulo}" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
             
-            <div class="info-video" style="padding: 20px 0;">
-                <h2 style="color: var(--cor-destaque-titulos); font-size: 2rem;">${aula.titulo}</h2>
-                <div class="intro-aula" style="margin-top: 20px;">
+            <div class="info-video">
+                <h2>${aula.titulo}</h2>
+                <div class="intro-aula">
                     <p>${aula.desc}</p>
                 </div>
                 ${materiaisHTML}
                 ${exerciciosHTML}
+                <a class='btn-download' href='./downloads/${modulo}/${aula.download}.zip' download>📥 Baixar Materiais da Aula (.zip)</a>
             </div>
         </div>
     `;
