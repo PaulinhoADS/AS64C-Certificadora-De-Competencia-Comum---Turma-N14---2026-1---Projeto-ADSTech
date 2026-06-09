@@ -7,6 +7,7 @@
                 "titulo": "Vídeo 1: Introdução ao HTML",
                 "url": "https://www.youtube.com/embed/tfThhRghB94",
                 "desc": "Conheça o que é HTML, como ele estrutura uma página e quais tags vamos usar ao longo do módulo.",
+                "download": "Introducao",
                 "materiais": [
                     "<h2>O que é HTML?</h2>",
                     "<p>HTML é a linguagem que estrutura o conteúdo de uma página web. Não é programação — você não escreve lógica ou condições. Você marca o conteúdo: diz ao navegador o que é título, parágrafo, imagem, link.</p>",
@@ -31,6 +32,7 @@
                 "titulo": "Vídeo 2: HTML da Vitrine",
                 "url": "https://www.youtube.com/embed/wY36Cb6DZ-g",
                 "desc": "Neste vídeo, vamos usar tags HTML para criar a área onde os produtos serão exibidos, separando os espaços para imagens, nomes e preços.",
+                "download": "Vitrine",
                 "materiais": [
                     "<h2>Estrutura da página</h2>",
                     "<p>Uma página de e-commerce é organizada em três blocos principais: <b>&lt;header&gt;</b> com navegação e busca, <b>&lt;main&gt;</b> com os produtos, e <b>&lt;footer&gt;</b> com informações do rodapé.</p>",
@@ -53,6 +55,7 @@
                 "titulo": "Vídeo 3: HTML do Formulário",
                 "url": "https://www.youtube.com/embed/ZnZqB5Z75zI",
                 "desc": "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce.",
+                "download": "Formulario",
                 "materiais": [
                     "<h2>A tag form</h2>",
                     "<p>Formulários são criados com a tag <b>&lt;form&gt;</b>. O atributo <b>onsubmit</b> define qual função JavaScript é chamada quando o usuário envia o formulário.</p>",
@@ -75,6 +78,7 @@
                 "titulo": "Vídeo 4: HTML do Carrinho",
                 "url": "https://www.youtube.com/embed/mNSQ5H5tyGY",
                 "desc": "Vamos montar a lista onde os itens selecionados ficarão guardados aguardando a finalização da compra.",
+                "download": "Carrinho",
                 "materiais": [
                     "<h2>Estados da interface</h2>",
                     "<p>A página do carrinho tem dois estados: vazio e preenchido. Ambos existem no HTML desde o início, mas a classe <b>oculto</b> esconde o que não deve aparecer. O JavaScript remove ou adiciona essa classe conforme necessário.</p>",
@@ -102,6 +106,7 @@
                 "titulo": "Vídeo 1: Introdução ao CSS",
                 "url": "https://www.youtube.com/embed/q3ycpdUt2Sc",
                 "desc": "Entenda o que é CSS, como ele se conecta ao HTML e os conceitos fundamentais que vamos aplicar no projeto.",
+                "download": "Introducao",
                 "materiais": [
                     "<h2>O que é CSS?</h2>",
                     "<p>CSS (<b>Cascading Style Sheets</b>) define a aparência da página. Se o HTML é a estrutura, o CSS é a pintura e a decoração. O mesmo HTML pode ter visual completamente diferente dependendo do CSS aplicado.</p>",
@@ -130,6 +135,7 @@
                 "titulo": "Vídeo 2: Estilos Globais",
                 "url": "https://www.youtube.com/embed/jp4bp-4jE3o",
                 "desc": "Antes de estilizar cada página, vamos configurar as variáveis de cor, o reset e os componentes compartilhados por toda a aplicação.",
+                "download": "Global",
                 "materiais": [
                     "<h2>O que é o global.css?</h2>",
                     "<p>É o arquivo de estilos compartilhado por todas as páginas. Tudo que é comum entre vitrine, formulário e carrinho está aqui: variáveis, reset, header, footer e componentes reutilizáveis.</p>",
@@ -162,6 +168,7 @@
                 "titulo": "Vídeo 3: Estilizando a Vitrine",
                 "url": "https://www.youtube.com/embed/n5dKNB4oL2E",
                 "desc": "Nesta aula, aplicaremos cores, tamanhos e organizaremos os produtos lado a lado utilizando Flexbox e Grid.",
+                "download": "Vitrine",
                 "materiais": [
                     "<h2>Grid de produtos</h2>",
                     "<p>Os cards são organizados com CSS Grid em 3 colunas iguais. A unidade <b>fr</b> divide o espaço disponível proporcionalmente:</p>",
@@ -187,6 +194,7 @@
                 "titulo": "Vídeo 4: Estilizando o Formulário",
                 "url": "https://www.youtube.com/embed/pXRviuL6vMY",
                 "desc": "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio.",
+                "download": "Formulario",
                 "materiais": [
                     "<h2>Estilizando input e textarea juntos</h2>",
                     "<p>Dois seletores separados por vírgula recebem o mesmo estilo de uma vez, evitando repetição:</p>",
@@ -210,6 +218,7 @@
                 "titulo": "Vídeo 5: Estilizando o Carrinho",
                 "url": "https://www.youtube.com/embed/RKjlH2O1kis",
                 "desc": "Aprenda a criar um visual flutuante para o carrinho, garantindo que o usuário veja claramente o total da compra.",
+                "download": "Carrinho",
                 "materiais": [
                     "<h2>Layout do item</h2>",
                     "<p>Cada item do carrinho é um container flex horizontal com três partes: imagem, detalhes e total. O <b>flex: 1</b> nos detalhes faz essa área ocupar todo o espaço entre a imagem e o preço:</p>",
@@ -241,6 +250,7 @@
                 "titulo": "Vídeo 1: Introdução ao JS",
                 "url": "https://www.youtube.com/embed/fMkoG3PXvlo",
                 "desc": "Conheça a sintaxe do JavaScript moderno e os conceitos que vão aparecer ao longo do módulo.",
+                "download": "Introducao",
                 "materiais": [
                     "<h2>O que é JavaScript?</h2>",
                     "<p>JavaScript controla o comportamento da página — o que acontece quando o usuário clica, digita ou adiciona um produto ao carrinho. HTML estrutura, CSS estiliza, JavaScript faz funcionar.</p>",
@@ -269,6 +279,7 @@
                 "titulo": "Vídeo 2: Interação na Vitrine",
                 "url": "https://www.youtube.com/embed/wxcM_f-ny2Y",
                 "desc": "Programando o botão 'Comprar' para reconhecer qual produto foi clicado e emitir um alerta na tela.",
+                "download": "Vitrine",
                 "materiais": [
                     "<h2>Renderização dinâmica</h2>",
                     "<p>Os produtos não estão fixos no HTML — o JavaScript lê os dados do localStorage e cria os cards na tela. Para cada produto, cria um elemento, adiciona a classe e insere o HTML via <b>template string</b>:</p>",
@@ -296,6 +307,7 @@
                 "titulo": "Vídeo 3: Validação do Formulário",
                 "url": "https://www.youtube.com/embed/gKM15TaKLUI",
                 "desc": "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar.",
+                "download": "Formulario",
                 "materiais": [
                     "<h2>event.preventDefault()</h2>",
                     "<p>Impede o comportamento padrão do formulário, que seria recarregar a página ao ser enviado. Sem essa linha os dados são perdidos antes de salvar:</p>",
@@ -323,6 +335,7 @@
                 "titulo": "Vídeo 4: Lógica do Carrinho",
                 "url": "https://www.youtube.com/embed/h5vBSSJrGjk",
                 "desc": "O vídeo mais importante! Vamos aprender a calcular a matemática dos valores, somar o total e atualizar o carrinho dinamicamente.",
+                "download": "Carrinho",
                 "materiais": [
                     "<h2>Delegação de Eventos</h2>",
                     "<p>Os botões de excluir são criados dinamicamente — não existem quando a página carrega. A solução é adicionar o ouvinte ao container pai, que sempre existe. O <b>e.target</b> identifica em qual elemento o clique aconteceu:</p>",
