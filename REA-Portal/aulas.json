@@ -53,7 +53,7 @@
             },
             {
                 "titulo": "Vídeo 3: HTML do Formulário",
-                "url": "https://www.youtube.com/embed/ZnZqB5Z75zI",
+                "url": "https://www.youtube.com/embed/jG9me3Gk3_U",
                 "desc": "Aprenda a estruturar campos de entrada (inputs) para criar uma área de contato e cadastro de clientes para o e-commerce.",
                 "download": "Formulario",
                 "materiais": [
@@ -192,7 +192,7 @@
             },
             {
                 "titulo": "Vídeo 4: Estilizando o Formulário",
-                "url": "https://www.youtube.com/embed/pXRviuL6vMY",
+                "url": "https://www.youtube.com/embed/bwazlN1pG3Y",
                 "desc": "Vamos deixar os campos de texto com um design moderno, arredondar bordas e dar destaque aos botões de envio.",
                 "download": "Formulario",
                 "materiais": [
@@ -305,7 +305,7 @@
             },
             {
                 "titulo": "Vídeo 3: Validação do Formulário",
-                "url": "https://www.youtube.com/embed/gKM15TaKLUI",
+                "url": "https://www.youtube.com/embed/7bBv58hy4MQ",
                 "desc": "Criando lógicas para garantir que o usuário preencheu o email e os dados corretamente antes de enviar.",
                 "download": "Formulario",
                 "materiais": [
